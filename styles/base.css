@@ -31,15 +31,12 @@ nav {
     background-color: #000;
     padding: 1rem;
 }
-section a {
+section a, nav a {
     color: rgb(255, 255, 255);
 }
 
 a:visited {
     color: rgb(251, 255, 0);
-}
-section {
-    color: #ffffff;
 }
 
 main {
