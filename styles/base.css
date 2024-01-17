@@ -4,7 +4,7 @@
     box-sizing: border-box;
   }
 body {
-    color: rgb(3, 0, 98);
+    color: rgb(255, 255, 255);
     display: grid;
     text-align: center;
     height: 100vh;
