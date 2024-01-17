@@ -28,21 +28,27 @@ img {
 
 nav {
     grid-column: 1 / 4;
-    color: #ffffff;
     background-color: #000;
     padding: 1rem;
+}
+nav a {
+    color: rgb(0, 191, 255);
+}
+
+a:visited {
+    color: rgb(251, 255, 0);
 }
 
 main {
     color: #ffffff;
-    background: slateblue;
+    background: rgb(61, 44, 185);
     height: 100%;
     width: 100%;
     grid-column: 1 / 2;
   }
 
 footer {
-    color: #26e2ff;
+    color: #aef4ff;
     background-color: navy;
     padding: 2rem;
     
