@@ -38,6 +38,9 @@ nav a {
 a:visited {
     color: rgb(251, 255, 0);
 }
+section {
+    color: #ffffff;
+}
 
 main {
     color: #ffffff;
