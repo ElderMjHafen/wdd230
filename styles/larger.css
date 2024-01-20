@@ -1,0 +1,49 @@
+/* Larger Views ******************************/
+@media screen and (min-width: 640px) {
+    
+
+
+    header, footer {
+        display: flex;
+        background-color: indigo;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+    }
+    
+    img {
+        height: 200px;
+        width: 250px;
+    }
+    nav a {
+        display: inline;
+        text-align: center;
+	}
+    
+	nav ul li {
+		flex: 1 1 100%;
+        text-align: center;
+        padding: 1rem;
+        text-decoration: none;
+	}
+    nav a {
+        color: #fff;
+        text-align: center;
+        padding: 1rem;
+        text-decoration: none;
+    }
+    
+    nav ul {
+        list-style-type: none;
+    }
+    /**/
+    nav {
+        background-color: #000000;
+        margin: 0 auto;
+        max-width: 800px;
+    }
+    
+    /**/
+}
+
