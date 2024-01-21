@@ -39,7 +39,6 @@ h2, h3 {
 nav a {
     display: block;
     text-align: center;
-    padding: 5px;
 }
 nav a:hover, section a:hover {
 	text-decoration:underline;
@@ -47,6 +46,7 @@ nav a:hover, section a:hover {
 
 section a, nav a {
     color: rgb(255, 255, 255);
+    padding: 5px;
 }
 
 a:visited {
