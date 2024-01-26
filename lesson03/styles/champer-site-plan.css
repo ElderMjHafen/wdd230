@@ -2,8 +2,12 @@
 
 body {
     font-size: 16px;
-    font-family: "Roboto";
     text-align: center;
+}
+
+main {
+    margin: 50px;
+    background-color: rgba(0, 0, 0, 0.205);
 }
 
 nav {
@@ -29,13 +33,17 @@ a:visited {
     color: rgb(251, 255, 0);
 }
 
+main p, main a {
+    font-family:"roboto";
+}
+
 header,
 footer {
+    font-family: "roboto";
     display: flex;
-    background-color: #3e6775;
-    color: aliceblue;
     text-align: center;
     align-items: center;
     justify-content: center;
     padding: 20px;
+    background-color: #d8d3e1;
 }
