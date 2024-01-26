@@ -35,11 +35,6 @@
 	.stuff {
 		margin: 1rem auto;
 	}
-
-    nav a {
-        display: inline;
-        text-align: center;
-	}
     
 	nav ul li {
 		flex: 1 1 100%;
@@ -62,7 +57,7 @@
         background-color: #000000;
         margin: 0 auto;
         padding: 15px;
-        max-width: 1250px;
+        max-width: 1225px;
     }
     
     /**/
