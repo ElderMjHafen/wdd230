@@ -9,6 +9,12 @@ body {
     grid-template-rows: auto auto 1fr auto;*/
 }
 
+iframe {
+    height: 200px;
+    width: 75%;
+    padding: 20px;
+}
+
 header {
 	background-color: indigo;
 	display: flex;
@@ -19,13 +25,70 @@ header {
 }
 
 img {
-    display: inline;
     height: 100px;
     width: 130px;
 }
 h1 {
     color: white;
 }
+
+/* small view navigation */
+#menu {
+	font-size: 1.5rem;
+	border: 1px solid rgba(0,0,0,.3);
+	padding: 3px 7px 6px;
+	background-color: #eee;
+	color: #000;
+ 	position: absolute;
+	top: .50em;
+	right: 0;
+}
+
+#menu::before {
+	content: "☰";
+}
+
+#menu.open::before {
+	content: "X";
+}
+
+.navigation {
+	display: flex;
+	flex-direction: column;
+	list-style: none;
+	background-color: #000000;
+	color: #fff;
+}
+
+.navigation a {
+	display: none;
+	padding: 1rem;
+	text-align: center;
+	text-decoration: none;
+	color: #fff;
+}
+.navigation a:hover, section a:hover {
+	font-weight: 700;
+}
+
+/* when the button is clicked - the open class is toggled (added/removed) */
+.open a {
+	display: block;
+}
+
+.active::before {
+	content: "📍";  /* just a wayfinding symbol for the user */
+}
+
+.stuff {
+	margin: .5m;
+	border: 1px solid rgba(0,0,0,.1);
+	background-color: #bed;
+	max-width: 580px;
+	height: 100vh;
+	
+}
+
 nav {
     display: block;
     color: white;
@@ -44,6 +107,17 @@ nav a:hover, section a:hover {
 	text-decoration:underline;
     color: #aef4ff;
 }
+/**Which is better?**/
+section.card::first-letter {
+    font-family: "Roboto";
+    color: #ff0000;
+    font-size: 200%;
+}
+/*/
+section.card::before {
+    content: "✨";
+}
+/**/
 
 section a, nav a {
     color: rgb(255, 255, 255);
