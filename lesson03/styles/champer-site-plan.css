@@ -37,6 +37,12 @@ main p, main a {
     font-family:"roboto";
 }
 
+iframe {
+    height: 200px;
+    width: 75%;
+    padding: 20px;
+}
+
 header,
 footer {
     font-family: "roboto";
