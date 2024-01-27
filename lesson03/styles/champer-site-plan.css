@@ -37,7 +37,7 @@ main p, main a {
     font-family:"roboto";
 }
 
-iframe {
+img {
     height: 200px;
     width: 75%;
     padding: 20px;
