@@ -25,6 +25,7 @@ header {
 }
 
 img {
+    margin: 10px;
     height: 100px;
     width: 130px;
 }
@@ -37,11 +38,13 @@ h1 {
 	font-size: 1.5rem;
 	border: 1px solid rgba(0,0,0,.3);
 	padding: 3px 7px 6px;
+    margin: 10px;
+    margin-left: 15px;
 	background-color: #eee;
 	color: #000;
  	position: absolute;
 	top: .50em;
-	right: 0;
+	right: .50em;
 }
 
 #menu::before {
