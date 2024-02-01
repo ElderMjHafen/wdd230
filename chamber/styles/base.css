@@ -163,9 +163,12 @@ main section.card {
 }
 
 footer {
+    display: inline-block;
     color: #aef4ff;
     padding: 20px;
+
 }
 footer p {
-    margin: 0;
+    border: #000 5px;
+    margin: 15px;
 }
