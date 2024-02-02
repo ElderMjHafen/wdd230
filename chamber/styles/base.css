@@ -12,14 +12,14 @@ body {
 
 button {
     background-color: rgb(205, 55, 0);
-    color: rgb(242, 236, 227);
+    color: rgb(255, 254, 253);
     font-weight: bold;
     padding: 20px;
     margin: 10px;
 }
 button:hover {
     background-color: rgb(255, 90, 30);
-    color: rgb(255, 252, 247);
+    color: rgb(255, 255, 253);
     font-weight: bolder;
 }
 button:active {
@@ -159,7 +159,7 @@ main section.card {
     border: 20px;
     margin: 25px;
     padding: 15px;
-    background-color: rgba(255, 255, 255, 0.205);
+    background-color: rgba(0, 0, 0, 0.205);
 }
 
 footer {
