@@ -124,8 +124,10 @@ nav {
     background-color: #000;
     padding: 5px;
 }
-h2, h3 {
+section.card p, h1, h2, h3, h4, h5, h6 {
+    font-weight: bold;
     margin: 0;
+    font-size: 20px;
 }
 
 nav a {
