@@ -24,6 +24,9 @@
     <header>
         <img src="images/circle_of_commerce.ico" width="110" height="90" alt="Circle Logo">
         <h1>Hafen Chamber of Commerce</h1>
+        <div id="mode">
+          🌕
+        </div>
     </header>
     <button id="menu" title="Nav collapse menu"></button>
     <nav class="navigation">
@@ -35,6 +38,7 @@
     </nav>
     <main>
       <script src="scripts/hamburger.js"></script>
+      <script src="scripts/dark-light-mode.js"></script>
       <section>
         <img src="images/circle_of_commerce.ico" width="110" height="90" alt="Circle Logo">
       </section>
@@ -48,10 +52,19 @@
         <button role="link" onclick="location.href='urlObject.placleholder'">JOIN OUR COMMUNITY</button>
       </section>
       <section class = "card">
-        <p>Current events go here.</p>
+        <!--Guess I'm not going to Dairy Queen anymore-->
+        <button role="link" onclick="location.href='https://www.statesman.com/story/news/state/2024/02/06/dairy-queen-meth-clifton-texas-waco-arrests/72480298007/'">
+          <div id="breaking-news-container">
+            <img src="https://www.statesman.com/story/news/state/2024/02/06/dairy-queen-meth-clifton-texas-waco-arrests/72480298007/" id="previewBtn" />
+            <div id="preview"></div>
+            <!--<script src="scripts/headline.js"></script>-->
+          </div>
+        </button>
       </section>
       <section class = "card">
-        <h3>Weather Card go here.</h3>
+        <h3>
+          <iframe src="https://www.google.com/search?hl=en-US&shmd=H4sIAAAAAAAA_y3MsQrCMBAAUHDs5NzpCk5SErCK4Npf6OAmZ3o0geYSLhey-e06-AHvdZ_uNFcRYoVGqJ4EAsNMOxWlEZYn3G_Xy9RPXjWXh7WtNbMVRQ3OuBRt8Shk__alvsY3Y9hN5u08LBQzCWqV3-USr0FD4jIC8goxCfWH4_AFOi7TtoQAAAA&si=AKbGX_pN1agLZ5YNWbco1ApcLrmr2bqnuu_2qZF6dlBCJyAmH1bEUYhxh3PC9CETlP4ovnJCbGywJD4Vs_kkJR-VAeuoUSrkrIXQrWggeu2p_VGBeQnJ3gwgK5O-IooX-e7HH8yHU416JIoUC80fylBcyq4iPlR-9g%3D%3D&q=Weather+in+current-area&kgs=58bf645d62e3a01d&shndl=31&source=sh/x/osrp/weather/m5/2"  width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade " title="weatherFrame"></iframe>
+        </h3>
       </section>
       <section class = "card">
         <h4>Spotlight 1</h4>

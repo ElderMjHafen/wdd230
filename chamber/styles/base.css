@@ -10,7 +10,21 @@ body {
     grid-template-rows: auto auto 1fr auto;*/
 }
 
-button {
+#mode {
+	position: absolute;
+	top: 1rem;
+	right: 1rem;
+	font-size: 3rem;
+	cursor: pointer;
+	font-size: 2rem;
+}
+
+
+/*Current Event*/
+
+
+/*Call to action Button*/
+section button {
     background-color: rgb(147, 39, 0);
     color: rgb(255, 254, 253);
     font-weight: bold;
@@ -18,22 +32,22 @@ button {
     margin: 10px;
 }
 
-button:hover {
+section button:hover {
     background-color: rgb(255, 90, 30);
     color: rgb(255, 255, 253);
     font-weight: bolder;
 }
-button:active {
+section button:active {
     background-color: orange;
     color: white;
     font-weight: bolder;
 }
-button:visited {
+section button:visited {
     background-color: rgba(255, 90, 30, 0.24);
     color: rgba(255, 252, 247, 0.24);
     font-weight: bolder;
 }
-button:visited:hover {
+section button:visited:hover {
     background-color: rgba(255, 166, 0, 0.5);
     color: rgb(255, 255, 255, 0.5);
     font-weight: bolder;
@@ -154,7 +168,7 @@ a:visited {
 
 main {
     color: #ffffff;
-    background: rgb(61, 44, 185);
+    background: #3d2cb9;
     padding: 10px;
 }
 
@@ -162,7 +176,7 @@ main section.card {
     border: 20px;
     margin: 25px;
     padding: 15px;
-    background-color: rgba(0, 0, 0, 0.205);
+    background-color: #00000034;
 }
 
 footer {
