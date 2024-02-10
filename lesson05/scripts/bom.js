@@ -1,11 +1,14 @@
 const input = document.querySelector('#favchap');
 const button = document.querySelector('button');
-const list = document.querySelector('#list');
+const list = document.querySelector('list');
+
+console.log("this page is linked");
 
 button.addEventListener('click', function(){
+    console.log(input.value);
     if (input !== '') {
-        const li = document.createDocument('li');
-        const deleteButton = document.createDocument('button');
+        const li = document.createElement('li');
+        const deleteButton = document.createElement('button');
         li.textContent = input.value;
         deleteButton.textContent = '❌'
         li.append(deleteButton);
@@ -16,11 +19,10 @@ button.addEventListener('click', function(){
             input.focus();
         });
         input.focus();
-        input.value= '';
-        document.getElementById("list").textContent = input.focus();
+        input.value = '';
     }
     else {
-        message.innerHTML = 'Please enter a chapter.';
-        document.getElementById("list").textContent = message.innerHTML.focus();
+        const notes = message.innerHTML('Please enter a chapter.');
+        document.getElementById('list').textContent = notes.focus();
     }
 });

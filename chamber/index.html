@@ -39,7 +39,7 @@
     <main>
       <script src="scripts/hamburger.js"></script>
       <script src="scripts/dark-light-mode.js"></script>
-      <section>
+      <section class="logo">
         <img src="images/circle_of_commerce.ico" width="110" height="90" alt="Circle Logo">
       </section>
       <section class = "card">
@@ -52,23 +52,23 @@
         <button role="link" onclick="location.href='urlObject.placleholder'">JOIN OUR COMMUNITY</button>
       </section>
       <section class = "card">
-        <!--Guess I'm not going to Dairy Queen anymore-->
-        <button role="link" onclick="location.href='https://www.statesman.com/story/news/state/2024/02/06/dairy-queen-meth-clifton-texas-waco-arrests/72480298007/'">
+        <p>Current Events</p>
+        <button role="link" onclick="location.href='https://www.usatoday.com/news/world/'" title="USA current events">
           <div id="breaking-news-container">
-            <img src="https://www.statesman.com/story/news/state/2024/02/06/dairy-queen-meth-clifton-texas-waco-arrests/72480298007/" id="previewBtn" />
+            <img src="https://assets-legacy.floridarrc.com/2023/08/USA-Today-logo-980x551.png" title="Click for current events" />
             <div id="preview"></div>
-            <!--<script src="scripts/headline.js"></script>-->
+            <script src="scripts/headline.js"></script>
           </div>
         </button>
       </section>
       <section class = "card">
-        <h3>Weather placeholder soon will be live</h3>
-        <!----
+        <h3>Weather</h3>
+        <!---->
         <div class="weather-card">
           <div class="search">
             <input type="search" placeholder="enter city name" spellcheck="false">
             <button>
-              <i class="bi bi-search"></i>
+              <i class="bi bi-search" title="search area weather"></i>
             </button>
           </div>
           <div class="weather">
@@ -77,14 +77,14 @@
             <h2 class="city">New York</h2>
             <div class="details">
               <div style="display: flex;" class="col">
-                <img class="humi" src="https://static-00.iconduck.com/assets.00/humidity-icon-2048x1675-xxsge5os.png">
+                <img class="humi" src="https://static-00.iconduck.com/assets.00/humidity-icon-2048x1675-xxsge5os.png" title="humidity">
                 <div class="info">
                   <p class="humidity">50%</p>
                   <p>Humidity</p>
                 </div>
               </div>
               <div class="col">
-                <img src="https://cdn-icons-png.flaticon.com/512/136/136712.png">
+                <img src="https://cdn-icons-png.flaticon.com/512/136/136712.png" title="Winds">
                 <div class="info">
                   <p class="wind">15 km/h</p>
                   <p>Wind Speed</p>
@@ -94,32 +94,36 @@
           </div>
         </div>
         <script src="scripts/weather.js"></script>
-        <---->
       </section>
       
       <section class = "card">
-        <h4>Spotlight 1</h4>
-        <!----
+        <h4>Get ready for Spring</h4>
         <div class="banner">
-          <div class="shopping-image">
-            <img src="https://images.unsplash.com/photo-1534452203293-494d7ddbf7e0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1952&q=80" alt="shopping">
-          </div>
-          
-          <div class="text">
-            <h4>
-              Out of Business SUPERSALE
-            </h4>
-          </div>
+          <a href="#">
+            <img src="images/Sale.png" alt="fictional shopping link">
+          </a>
         </div>
-        
-        <a href="https://studio.envato.com/explore/web-banner-design/46338-hq-web-banner-design-10sizes">Inspiration</a>
-      -->
+        <div class="text">
+          <h4>
+            Spring SUPERSALE
+          </h4>
+        </div>
       </section>
       <section class = "card">
-        <h5>Spotlight 2</h5>
+        <h5>Come and enjoy the Haven Island Maldives</h5>
+        <p>Buy tickets to the Maldives, and enjoy the Haven Islands.</p>
+        <p><span style="font-weight: bolder;">Disclaimer: not actual ad, this is a website project for my course on WDD230.</span></p>
+        <button class="adtwo">
+          <img src="images/Sea_Beach_Background.jpg" width="120" height="100" alt="fictional ad for fictinal tickets">
+        </button>
       </section>
       <section class = "card">
-        <h6>Spotlight 3</h6>
+        <h6>Coming Soon: Billie: Bust Up</h6>
+        <div class="ad-banner">
+          <a href="https://store.steampowered.com/app/1400830/Billie_Bust_Up/" target="_blank">
+            <img src="https://cdn.akamai.steamstatic.com/steam/apps/1400830/header.jpg?t=1693233876" alt="real link to Steam Billie Bust Up">
+          </a>
+        </div>
       </section>
     </main>
     <footer>

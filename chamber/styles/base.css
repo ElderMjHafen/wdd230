@@ -17,6 +17,7 @@ body {
 	font-size: 3rem;
 	cursor: pointer;
 	font-size: 2rem;
+  color: white;
 }
 
 
@@ -54,7 +55,7 @@ section button:visited:hover {
 }
 
 header, footer {
-	background-color: navy;
+	background-color: rgb(0, 25, 148);
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -178,6 +179,13 @@ main section.card {
     padding: 15px;
     background-color: #00000034;
 }
+section.logo img {
+  width: 300px;
+  height: 300px;
+}
+p.span {
+  color: red;
+}
 
 footer {
     display: inline-block;
@@ -190,8 +198,13 @@ footer p {
     margin: 15px;
 }
 
-/*Weather*
-section img {
+/*Current Event*/
+section button div {
+  background-color: white;
+}
+
+/*Weather*/
+section.card img {
     max-width: 100%;
   }
   .weather-card {
@@ -202,11 +215,11 @@ section img {
     margin: 30px auto 0;
     border-radius: 20px;
     color: #fff;
-    background: linear-gradient(120deg, #00feba, #5b548a);
+    background: linear-gradient(120deg, #3700fe, #5b548a);
   }
   .weather-card .search {
     display: flex;
-    justify-conntent: space-between;
+    justify-content: space-between;
     align-items: center;
     width: 100%;
   }
@@ -281,5 +294,62 @@ section img {
     text-align: left;
     margin-top: -20px;
   }
-
 /*Spotlight 1*/
+section div.banner {
+  -moz-transform: scale(1);
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  transition: all .3s ease-in-out;
+}
+section div.banner:hover {
+  -webkit-transform: scale(1.04);
+  -moz-transform: scale(1.04);
+  -o-transform: scale(1.04);
+  -ms-transform: scale(1.04);
+  transform: scale(1.04);
+}
+
+/*Spotlight 2*/
+section button.adtwo {
+  background-color: rgb(46, 54, 139);
+}
+section button.adtwo:hover {
+  background-color: rgb(30, 101, 255);
+  font-weight: bolder;
+}
+section button.adtwo:active {
+  background-color: rgb(102, 0, 255);
+  color: white;
+  font-weight: bolder;
+}
+section button.adtwo:visited {
+  background-color: rgba(255, 90, 30, 0.24);
+  color: rgba(255, 252, 247, 0.24);
+  font-weight: bolder;
+}
+section button.adtwo:visited:hover {
+  background-color: rgba(255, 166, 0, 0.5);
+  color: rgb(255, 255, 255, 0.5);
+  font-weight: bolder;
+}
+/*Spotlight 3*/
+section div.ad-banner img {
+  width: 50%;
+  height: 50%;
+}
+section div.ad-banner {
+  -moz-transform: scale(1);
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  opacity: 100%;
+  transition: all .3s ease-in-out;
+}
+
+section div.ad-banner:hover {
+  opacity: 75%;
+  -webkit-transform: scale(1.15);
+  -moz-transform: scale(1.15);
+  -o-transform: scale(1.15);
+  -ms-transform: scale(1.15);
+  transform: scale(1.15);
+}

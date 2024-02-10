@@ -55,4 +55,17 @@
         padding: 15px;
         max-width: 1225px;
     }
+    #mode {
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+        font-size: 3rem;
+        cursor: pointer;
+        font-size: 2rem;
+    }
+    /*Spotlight 3*/
+    section div.ad-banner img {
+        width: inherit;
+        height: inherit;
+    }
 }
