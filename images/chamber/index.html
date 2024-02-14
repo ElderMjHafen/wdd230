@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chamber of Commerce</title>
+    <meta
+      name="description"
+      content= "Build a page for the Chamber of Commerse for the website project for
+      WDD 230 - Web Frontend Development."
+    />
+    <meta name="author" content="Michael J. Hafen" />
+    <link rel="icon" href="images/circle_of_commerce.ico">
+    <meta property="og:title" content="Chamber of Commerce" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://eldermjhafen.github.io/wdd230/images/rsz_michael_hafen_pic.jpg" />
+    <meta property="og:url" content="https://eldermjhafen.github.io/wdd230/chamber/index.html" />
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+</head>
+<body>
+    <header>
+        <img src="images/circle_of_commerce.ico" width="110" height="90" alt="Circle Logo">
+        <h1>Hafen Chamber of Commerce</h1>
+        <div id="mode">
+          🌙
+        </div>
+    </header>
+    <button id="menu" title="Nav collapse menu"></button>
+    <nav class="navigation">
+      <a href = "../index.html">Home</a>
+      <a href = "../lesson03/chamber-site-plan.html">Site Plan</a>
+      <a href = "#">Chamber</a>
+      <a href = "https://www.byui.edu/" target="_blank">BYU-Idaho</a>
+      <a href = "https://www.churchofjesuschrist.org/study/scriptures/bofm/2-ne/2?lang=eng&id=p25#p25" target="_blank">Scripture</a>
+    </nav>
+    <main>
+      <script src="scripts/hamburger.js"></script>
+      <script src="scripts/dark-light-mode.js"></script>
+      <section class="logo">
+        <img src="images/circle_of_commerce.ico" width="110" height="90" alt="Circle Logo">
+      </section>
+      <section class = "card">
+        <h2>Greetings to all visitors and protential members:</h2>
+        <p>
+          Our purpose is to provide regional economic catalyst, leadership convener and community
+          champion. We also wish to bring sense of community unity with fellow businesses and
+          worked together for mutual benifits of our companies and community.
+        </p>
+        <button role="link" onclick="location.href='urlObject.placleholder'">JOIN OUR COMMUNITY</button>
+      </section>
+      <section class = "card">
+        <p>Current Events</p>
+        <button role="link" onclick="location.href='https://www.usatoday.com/news/world/'" title="USA current events">
+          <div id="breaking-news-container">
+            <img src="https://assets-legacy.floridarrc.com/2023/08/USA-Today-logo-980x551.png" title="Click for current events" />
+            <div id="preview"></div>
+            <script src="scripts/headline.js"></script>
+          </div>
+        </button>
+      </section>
+      <section class = "card">
+        <h3>Weather</h3>
+        <!---->
+        <div class="weather-card">
+          <div class="search">
+            <input type="search" placeholder="enter city name" spellcheck="false">
+            <button>
+              <i class="bi bi-search" title="search area weather"></i>
+            </button>
+          </div>
+          <div class="weather">
+            <img class="weather-icon" src="https://static.vecteezy.com/system/resources/previews/024/825/182/non_2x/3d-weather-icon-day-with-rain-free-png.png" alt="...">
+            <h2 class="temp">15°C </h2>
+            <h2 class="city">New York</h2>
+            <div class="details">
+              <div style="display: flex;" class="col">
+                <img class="humi" src="https://static-00.iconduck.com/assets.00/humidity-icon-2048x1675-xxsge5os.png" title="humidity">
+                <div class="info">
+                  <p class="humidity">50%</p>
+                  <p>Humidity</p>
+                </div>
+              </div>
+              <div class="col">
+                <img src="https://cdn-icons-png.flaticon.com/512/136/136712.png" title="Winds">
+                <div class="info">
+                  <p class="wind">15 km/h</p>
+                  <p>Wind Speed</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <script src="scripts/weather.js"></script>
+      </section>
+      
+      <section class = "card">
+        <h4>Get ready for Spring</h4>
+        <div class="banner">
+          <a href="#">
+            <img src="images/Sale.png" alt="fictional shopping link">
+          </a>
+        </div>
+        <div class="text">
+          <h4>
+            Spring SUPERSALE
+          </h4>
+        </div>
+      </section>
+      <section class = "card">
+        <h5>Come and enjoy the Haven Island Maldives</h5>
+        <p>Buy tickets to the Maldives, and enjoy the Haven Islands.</p>
+        <p><span style="font-weight: bolder;">Disclaimer: not actual ad, this is a website project for my course on WDD230.</span></p>
+        <button class="adtwo">
+          <img src="images/Sea_Beach_Background.jpg" width="120" height="100" alt="fictional ad for fictinal tickets">
+        </button>
+      </section>
+      <section class = "card">
+        <h6>Coming Soon: Billie: Bust Up</h6>
+        <div class="ad-banner">
+          <a href="https://store.steampowered.com/app/1400830/Billie_Bust_Up/" target="_blank">
+            <img src="https://cdn.akamai.steamstatic.com/steam/apps/1400830/header.jpg?t=1693233876" alt="real link to Steam Billie Bust Up">
+          </a>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <p>&copy;<span id="currentYear"></span></p><br>
+      <p>This is a course project for a fictionous chamber of 
+        commerse for WDD 230, Frontend Web Development Course.</p>
+      <p id = "lastModified">Last Modified</p>
+    </footer>
+    <script src="scripts/getdates.js"></script>
+</body>
+</html>
