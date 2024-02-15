@@ -1,38 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
-.hero {
-    margin: 10px auto;
-	position: relative;
-	border: 1px solid rgba(0,0,0,.1);
-}
-
-.hero img {
-    width: 98%;
-    height: auto;
-    object-fit: cover;
-}
-
-.herolabel {
-	color: #000;
-	top: 30px;
-	left: 30px;
-	background: radial-gradient(#fffffff9, #212d64e5);
-	border: 1px solid rgba(255, 255, 255, 0.75);
-	padding: 1.5rem;
-	box-shadow: 0 0 3rem #fff;
-	opacity: 0.75;
-}
-
-.herolabel span {
-	margin: 0;
-	padding: .25rem;
-	font-weight: 700;
-	font-size: 1.75rem;
-	font-family:"Great Vibes", serif;
-}
-
-
-
 body {
     text-align: center;
     /*display: grid;
@@ -66,6 +33,38 @@ img {
     height: 100px;
     width: 130px;
 }
+
+.hero {
+    margin: 10px auto;
+	position: relative;
+	border: 1px solid rgba(0,0,0,.1);
+}
+
+.hero img {
+    width: 98%;
+    height: auto;
+    object-fit: cover;
+}
+
+.herolabel {
+	color: #000;
+	top: 30px;
+	left: 30px;
+	background: radial-gradient(#fffffff9, #212d64e5);
+	border: 1px solid rgba(255, 255, 255, 0.75);
+	padding: 1.5rem;
+	box-shadow: 0 0 3rem #fff;
+	opacity: 0.75;
+}
+
+.herolabel span {
+	margin: 0;
+	padding: .25rem;
+	font-weight: 700;
+	font-size: 1.75rem;
+	font-family:"Great Vibes", serif;
+}
+
 h1 {
     color: white;
 }
