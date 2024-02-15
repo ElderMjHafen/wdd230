@@ -20,7 +20,6 @@
     }
 
     .herolabel {
-        font-size: larger;
         position: absolute;
         top: 30px;
         left: 30px;
@@ -29,6 +28,13 @@
         padding: 1.5rem;
         box-shadow: 0 0 3rem #fff;
         opacity: 0.75;
+    }
+
+    .herolabel span {
+        margin: 0;
+        padding: .25rem;
+        font-weight: 700;
+        font-size: 1.5rem;
     }
 
     #menu {
