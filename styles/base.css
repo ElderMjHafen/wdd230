@@ -13,10 +13,11 @@
 }
 
 .herolabel {
+	color: #000;
 	top: 30px;
 	left: 30px;
 	background: radial-gradient(#fffffff9, #212d64e5);
-	border: 1px solid rgba(0,0,0,.75);
+	border: 1px solid rgba(255, 255, 255, 0.75);
 	padding: 1.5rem;
 	box-shadow: 0 0 3rem #fff;
 	opacity: 0.75;
@@ -76,7 +77,7 @@ h1 {
 	padding: 3px 7px 6px;
     margin: 10px;
     margin-left: 15px;
-	background-color: #eee;
+	background-color: #4b4b4b;
 	color: #000;
  	position: absolute;
 	top: .50em;
@@ -176,7 +177,10 @@ main {
     color: #ffffff;
     background: rgb(61, 44, 185);
     padding: 10px;
-  }
+}
+main iframe {
+	color: #000;
+}
 
 footer {
     color: #aef4ff;
