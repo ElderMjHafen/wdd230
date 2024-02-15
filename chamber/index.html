@@ -65,35 +65,20 @@
         <h3>Weather</h3>
         <!---->
         <div class="weather-card">
-          <div class="search">
-            <input type="search" placeholder="enter city name" spellcheck="false">
-            <button>
-              <i class="bi bi-search" title="search area weather"></i>
-            </button>
-          </div>
           <div class="weather">
-            <img class="weather-icon" src="https://static.vecteezy.com/system/resources/previews/024/825/182/non_2x/3d-weather-icon-day-with-rain-free-png.png" alt="...">
-            <h2 class="temp">15°C </h2>
-            <h2 class="city">New York</h2>
-            <div class="details">
-              <div style="display: flex;" class="col">
-                <img class="humi" src="https://static-00.iconduck.com/assets.00/humidity-icon-2048x1675-xxsge5os.png" title="humidity">
-                <div class="info">
-                  <p class="humidity">50%</p>
-                  <p>Humidity</p>
-                </div>
-              </div>
-              <div class="col">
-                <img src="https://cdn-icons-png.flaticon.com/512/136/136712.png" title="Winds">
-                <div class="info">
-                  <p class="wind">15 km/h</p>
-                  <p>Wind Speed</p>
-                </div>
-              </div>
-            </div>
+            <p>Today's Weather
+              <ul> 
+                 <li>High: 72&deg;F</li>
+                 <li>Low: 59&deg;F</li>
+                 <li>Chance of Precipitation: 11%</li>
+                 <li>Wind: 3.5 mph NW</li>
+                 <li>Wind Chill: <span id="windChill"></span>&deg;F</li>  
+          </ul> </p>
+          
+          <script src="scripts/windchill.js"></script>
           </div>
         </div>
-        <script src="scripts/weather.js"></script>
+        
       </section>
       
       <section class = "card">
