@@ -8,6 +8,11 @@
         padding: 20px;
     }
 
+    .logo .hero img {
+        height: auto;
+        width: 100%;
+    }
+
     .herolabel {
         position: absolute;
         top: 30px;
