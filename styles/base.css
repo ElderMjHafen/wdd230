@@ -16,7 +16,26 @@ h3 {
 iframe {
     height: 200px;
     width: 75%;
-    padding: 20px;
+    margin: 20px;
+
+	background: black;
+    animation: fade 10s;
+}
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+section span {
+	font-family: 'roboto';
+	font-size: 15px;
+	font-weight: bold;
+	background: #0000005a;
+	padding: 10px;
 }
 
 header {
