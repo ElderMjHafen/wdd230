@@ -66,6 +66,7 @@ img {
 }
 
 .herolabel {
+	position: absolute;
 	color: #000;
 	top: 30px;
 	left: 30px;
@@ -80,7 +81,7 @@ img {
 	margin: 0;
 	padding: .25rem;
 	font-weight: 700;
-	font-size: 1.75rem;
+	font-size: 1.25rem;
 	font-family:"Great Vibes", serif;
 }
 
