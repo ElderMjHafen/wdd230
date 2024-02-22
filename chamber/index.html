@@ -42,9 +42,9 @@
       <section class="logo">
         <div class="hero">
             <picture>
-                <source srcset="images/wdd230-org_large.webp_small.webp" media="(max-width: 500)">
-                <source srcset="images/wdd230-org_medium.webp" media="(max-width: 1000)">
-                <img src="images/wdd230-org_large.webp" alt="chamber of commerse." width="1500px" height="750px">
+                <source srcset="images/wdd230-org_large.webp_small.webp" media="(max-width: 500px)">
+                <source srcset="images/wdd230-org_medium.webp" media="(max-width: 1000px)">
+                <img src="images/wdd230-org_large.webp" alt="chamber of commerse." height="750" style="width: 90%">
             </picture>
           <div class="herolabel">
             <span>Hafen Chamber of Commerse</span>
@@ -61,21 +61,21 @@
         <button role="link" onclick="location.href='urlObject.placleholder'">JOIN OUR COMMUNITY</button>
       </section>
       <section class = "card">
-        <p>Current Events</p>
-        <button role="link" onclick="location.href='https://www.usatoday.com/news/world/'" title="USA current events">
-          <div id="breaking-news-container">
+        <h2>Current Events</h2>
+        <div id="breaking-news-container">
+          <button role="link" onclick="location.href='https://www.usatoday.com/news/world/'" title="USA current events">
             <img src="https://assets-legacy.floridarrc.com/2023/08/USA-Today-logo-980x551.png" title="Click for current events" />
-            <div id="preview"></div>
             <script src="scripts/headline.js"></script>
-          </div>
-        </button>
+          </button>
+          <div id="preview"></div>
+        </div>
       </section>
       <section class = "card">
         <h3>Weather</h3>
         <!---->
         <div class="weather-card">
           <div class="weather">
-            <p>Today's Weather
+            <a>Today's Weather
               <ul> 
                  <li>High: 42&deg;F</li>
                  <li>Low: 19&deg;F</li>
@@ -83,7 +83,7 @@
                  <li>Wind: 3.5 mph NW</li>
                  <li>Wind Chill: <span id="windChill"></span>&deg;F</li>  
               </ul>
-            </p>
+            </a>
           
             <script src="scripts/windchill.js"></script>
           </div>
@@ -109,7 +109,7 @@
         <p>Buy tickets to the Maldives, and enjoy the Haven Islands.</p>
         <p><span style="font-weight: bolder;">Disclaimer: not actual ad, this is a website project for my course on WDD230.</span></p>
         <button class="adtwo">
-          <img src="images/rsz_sea_beach_background.webp" width="120" height="100" alt="fictional ad for fictinal tickets">
+          <img src="images/rsz_sea_beach_background.webp" height="100" alt="fictional ad for fictinal tickets" style="width: 90%">
         </button>
       </section>
       <section class = "card">

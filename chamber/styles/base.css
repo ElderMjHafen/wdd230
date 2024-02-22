@@ -13,20 +13,21 @@
 }
 
 .herolabel {
-color: #ffffff;
-background-color: #00000034;
-top: 30px;
-left: 30px;
-border: 1px solid rgba(255, 0, 0, 0.372);
-padding: 1.5rem;
-box-shadow: 0 0 3rem #fff;
+  position: absolute;
+  color: #ffffff;
+  background-color: #00000034;
+  top: 30px;
+  left: 30px;
+  border: 1px solid rgba(255, 0, 0, 0.372);
+  padding: 1.5rem;
+  box-shadow: 0 0 3rem #fff;
 }
 
 .herolabel span {
-margin: 0;
-padding: .25rem;
-font-weight: 700;
-font-size: 1.75rem;
+  margin: 0;
+  padding: .25rem;
+  font-weight: 700;
+  font-size: 1rem;
 }
 
 body {
@@ -51,7 +52,26 @@ body {
 
 
 /*Current Event*/
-
+section.breaking-news-container button {
+  background-color: rgb(255, 255, 255);
+  color: rgb(255, 254, 253);
+}
+section.breaking-news-container button:hover {
+  background-color: rgb(232, 232, 232);
+  color: rgb(255, 254, 253);
+}
+section.breaking-news-container button:active {
+  background-color: rgb(192, 192, 192);
+  color: rgb(255, 254, 253);
+}
+section.breaking-news-container button:visited {
+  background-color: rgba(255, 255, 255, 0.785);
+  color: rgb(255, 254, 253);
+}
+section.breaking-news-container button:visited:hover {
+  background-color: rgba(235, 235, 235, 0.785);
+  color: rgb(255, 254, 253);
+}
 
 /*Call to action Button*/
 section button {
