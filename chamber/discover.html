@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discover</title>
+    <meta
+      name="description"
+      content= "Build a page for the Chamber of Commerse for the website project for
+      WDD 230 - Web Frontend Development."
+    />
+    <meta name="author" content="Michael J. Hafen" />
+    <link rel="icon" href="images/circle_of_commerce.ico">
+    <meta property="og:title" content="Chamber of Commerce" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://eldermjhafen.github.io/wdd230/images/rsz_michael_hafen_pic.jpg" />
+    <meta property="og:url" content="https://eldermjhafen.github.io/wdd230/chamber/index.html" />
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+</head>
+<body>
+    <header>
+        <img src="images/circle_of_commerce.ico" width="110" height="90" alt="Circle Logo">
+        <h1>Hafen Chamber of Commerce</h1>
+        <div id="mode">
+          🌙
+        </div>
+    </header>
+    <button id="menu" title="Nav collapse menu"></button>
+    <nav class="navigation">
+      <a href = "../index.html">Home</a>
+      <a href = "../lesson03/chamber-site-plan.html">Site Plan</a>
+      <a href = "#">Chamber</a>
+      <a href = "https://www.byui.edu/" target="_blank">BYU-Idaho</a>
+      <a href = "https://www.churchofjesuschrist.org/study/scriptures/bofm/2-ne/2?lang=eng&id=p25#p25" target="_blank">Scripture</a>
+    </nav>
+    <main>
+      <script src="scripts/hamburger.js"></script>
+      <script src="scripts/dark-light-mode.js"></script>
+      <aside>
+        <section class="logo">
+          <div class="hero">
+              <picture>
+                  <source srcset="images/wdd230-org-small.webp" media="(max-width: 500px)">
+                  <source srcset="images/wdd230-org_medium.webp" media="(max-width: 1000px)">
+                  <img src="images/wdd230-org_large.webp" alt="chamber of commerse." loading="lazy" height="750" style="width: 90%">
+              </picture>
+            <div class="herolabel">
+              <span>Hafen Chamber of Commerse</span>
+            </div>
+          </div>
+        </section>
+          <picture class="pic1">
+            <img src="images/rsz_sea_beach_background.webp" title="beach" loading="lazy">
+          </picture>
+          <picture class="pic2">
+            <img src="images/hero-small.webp" title="Fort Lauderdale" loading="lazy">
+          </picture>
+          <picture class="pic3">
+            <img src="images/landscape.webp" title="landscape" loading="lazy">
+          </picture>
+          <picture class="pic4">
+            <img src="https://placekitten.com/200/300" alt="Images of kittens" loading="lazy" width="200" height="300">
+          </picture>
+          <picture class="pic5">
+            <img src="https://picsum.photos/seed/picsum/200/300" alt="View of Mountain from ground pearing over hill" loading="lazy" width="200" height="300">
+          </picture>
+        <section class = "card">
+          <div class="weather-card">
+            <div class="weather">
+              <h2>Today's Weather</h2>
+                <ul> 
+                   <li>High: 42&deg;F</li>
+                   <li>Low: 19&deg;F</li>
+                   <li>Chance of Precipitation: 11%</li>
+                   <li>Wind: 3.5 mph NW</li>
+                   <li>Wind Chill: <span id="windChill"></span>&deg;F</li>  
+                </ul>
+              <script src="scripts/windchill.js"></script>
+            </div>
+          </div>
+        </section>
+        <section class = "card">
+          <h2>Current Events</h2>
+          <div id="breaking-news-container">
+            <button role="link" onclick="location.href='https://www.usatoday.com/news/world/'" title="USA current events">
+              <img src="https://assets-legacy.floridarrc.com/2023/08/USA-Today-logo-980x551.png" title="Click for current events" />
+              <script src="scripts/headline.js"></script>
+            </button>
+            <div id="preview"></div>
+          </div>
+        </section>
+        <section>
+          <div class="main-div">
+            <div class="sub-div">
+              <div class="top-div">
+                <ul>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                </ul>
+              </div>
+              <div class="year-div">
+                <div id="month"></div>
+                <div id="year"></div>
+              </div>
+            </div>
+            <div class="date-div">
+              <p id="date">
+              </p>
+              <p id="day">aaaa</p>
+            </div>
+          </div>
+          <script src="scripts/calender.js"></script>
+        </section>
+        <section class = "card">
+          <div class="ad-banner">
+            <h6>Coming Soon: Billie: Bust Up</h6>
+            <a href="https://store.steampowered.com/app/1400830/Billie_Bust_Up/" target="_blank">
+              <img src="https://cdn.akamai.steamstatic.com/steam/apps/1400830/header.jpg?t=1693233876" alt="real link to Steam Billie Bust Up">
+            </a>
+          </div>
+        </section>
+      </aside>
+      <p><span class="label">Visits: </span><span class="visits"></span></p>
+      <script src="scripts/visit.js"></script>
+    </main>
+    <footer>
+      <p>&copy;<span id="currentYear"></span></p><br>
+      <p>This is a course project for a fictionous chamber of 
+        commerse for WDD 230, Frontend Web Development Course.</p>
+      <p id = "lastModified">Last Modified</p>
+    </footer>
+    <script src="scripts/getdates.js"></script>
+</body>
+</html>

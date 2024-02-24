@@ -1,10 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
+
 .hero {
   margin: 10px auto;
   position: relative;
   border: 1px solid rgba(0,0,0,.1);
 }
+
 
 .hero img {
   width: 98%;
@@ -51,7 +53,7 @@ body {
 }
 
 
-/*Current Event*/
+/*Current Event*
 section.breaking-news-container button {
   background-color: rgb(255, 255, 255);
   color: rgb(255, 254, 253);
@@ -141,6 +143,9 @@ h1 {
 #menu.open::before {
 	content: "X";
     font-family: "roboto";
+}
+aside {
+  display: block;
 }
 
 .navigation {
@@ -253,6 +258,70 @@ section button div {
   background-color: white;
 }
 
+/*Calender*/
+.main-div {
+  border: 2px solid #3231315c;
+  width: 250px;
+  top: 50px;
+  border-radius: 20px;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 0;
+  box-shadow: 0px 0px 13px 3px #00000075;
+  left: 40%;
+  margin: 0;
+  background: #e0dcdca8;
+}
+
+#date {
+  font-size: 10em;
+  margin: 0;
+  padding: 0;
+}
+
+.top-div ul {
+  display: flex;
+  padding: 0;
+}
+.top-div ul li {
+  list-style-type: circle;
+  width: 15px;
+  height: 60px;
+  border-radius: 10px;
+  background-image: radial-gradient(white 30%, #000000e3 40%, #aca9a9ad 70%);
+  margin: 0px 12px;
+  box-shadow: 0px 4px 3px 0px #000;
+}
+.top-div {
+  top: -50px;
+}
+.sub-div {
+  align-items: center;
+  width: 100%;
+  background: #e98e30;
+  border-radius: 17px 17px 0 0;
+}
+.year-div {
+  font-size: 30px;
+  margin-top: 30px;
+  padding: 10px 0 5px 0;
+  align-items: center;
+}
+#year {
+  font-size: 20px;
+}
+
+.date-div {
+  flex-direction: column;
+  align-items: center;
+}
+#day {
+  padding: 0;
+  margin: 0;
+  bottom: 6px;
+  font-size: 20px;
+}
+
 /*Weather*/
 section.card img {
     max-width: 100%;
@@ -330,9 +399,9 @@ section div.ad-banner {
 
 section div.ad-banner:hover {
   opacity: 75%;
-  -webkit-transform: scale(1.15);
-  -moz-transform: scale(1.15);
-  -o-transform: scale(1.15);
-  -ms-transform: scale(1.15);
-  transform: scale(1.15);
+  -webkit-transform: scale(1.05);
+  -moz-transform: scale(1.05);
+  -o-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  transform: scale(1.05);
 }

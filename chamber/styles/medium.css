@@ -14,4 +14,10 @@
     cursor: pointer;
     font-size: 2rem;
 }
+aside {
+  display: block;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  padding: 1em;
+}
 }
