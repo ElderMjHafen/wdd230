@@ -1,17 +1,20 @@
-/*Tried to count the time between visits
-const theDateToday = new Date();
-
-
-const msToDays = 84600000;
-const today = Date.now();
-const lastVisit = JSON.parse(time);*/
 const visitsDisplay = document.querySelector(".visits");
-localStorage.setItem("lastVesitedTime", JSON.stringify(new Date()));
 
-const time = localStorage.getItem("lastVesitedTime");
-const lastVisitedTime = JSON.parse(time);
-const now =new Date();
-const diffDays = now.getDate() - lastVisitedTime.getDate(); 
+let numVisits = Number(window.localStorage.getItem("numVisits-ls")) || 0;
+
+if (numVisits !== 0) {
+	visitsDisplay.textContent = numVisits;
+} else {
+	visitsDisplay.textContent = `Welcome! Let us know if you have any questions.`;
+}
+
+numVisits++;
+
+localStorage.setItem("numVisits-ls", numVisits);
+
+
+
+/*const msToDays = 84600000/1000 * 60/60 *60/60 *24;*/
 
 if (diffDays == 0) {
 	visitsDisplay.textContent = "Back so soon! Awesome!";
