@@ -1,0 +1,79 @@
+body {
+	font-family:monospace, Arial, serif;
+}
+
+table {
+	margin: 10px auto;
+	border: thin solid var(--border);
+	box-shadow: 0 0 10px var(--shadow);
+	border-collapse: collapse;
+}
+
+tbody {
+    background-color:rgb(247, 251, 255);
+    color: black;
+    border: thin solid;
+}
+
+tbody tr {
+    color: black;
+    border: thin solid;
+}
+tbody tr td {
+    border: thin solid;
+}
+
+thead tr {
+    background-color: black;
+}
+thead tr th {
+    background-color:rgb(39, 39, 39);
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+thead .blank {
+    background-color: black;
+}
+
+tbody .row2 {
+    background-color: rgb(228, 228, 228);
+    color: black;
+}
+
+tr {
+    background-color:rgb(29, 29, 29);
+    color: white;
+}
+
+caption {
+    padding-top: 15px;
+    caption-side:top;
+      color: white;
+      background: black;
+      font-size: 1.13rem;
+      font-family: monospace;
+      font-weight: bolder;
+}
+
+tr:first-child th, .highlight {
+	background-color: var(--back);
+	color: var(--forelight);
+}
+
+th, td {
+	padding: 7px 15px;
+	border: 1px solid var(--borderlight);
+}
+
+th {
+	background-color: var(--back2);
+	font-size: larger;
+}
+
+td {
+	text-align: center;
+}
+
+tbody tr:nth-child(odd) {
+	background-color: var(--zebra);
+}
