@@ -1,4 +1,4 @@
-var kp1 = document.querySelector("#keyphrase");
+const kp1 = document.querySelector("#keyphrase");
 const kp2 = document.querySelector("#keyphrase2");
 const message = document.querySelector("#formmessage");
 

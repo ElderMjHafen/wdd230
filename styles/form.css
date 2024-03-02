@@ -55,7 +55,7 @@ form label.top input, form label.top select {
     background-color: rgba(0,0,0,0.1);
 }
 
-form button {
+form input.submitBtn {
     border: none;
     background-color: #9c2c13;
     color: white;
@@ -65,7 +65,7 @@ form button {
     width: 96%;
     max-width: 20rem;
 }
-form button:hover {
+form input.submitBtn:hover {
     background-color: #ff2f00;
 }
 
