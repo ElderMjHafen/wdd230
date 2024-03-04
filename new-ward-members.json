@@ -1,0 +1,30 @@
+{
+    "wardInfomation": {
+        "familyName": "hafen",
+        "moveInDatw": "2020-15-04",
+        "numberInFamily": "4",
+        "visitedByBishopric": true,
+        "familyMembers": [
+            {
+              "name": "Ben Hafen",
+              "gender": "Male",
+              "birthdate": "1960-12-25"
+            },
+            {
+              "name": "Ruth Hafen",
+              "gender": "Female",
+              "birthdate": "1954-12-22"
+            },
+            {
+              "name": "Matthew Hafen",
+              "gender": "Male",
+              "birthdate": "1988-02-24"
+            },
+            {
+              "name": "Michael Hafen",
+              "gender": "Male",
+              "birthdate": "1991-05-16"
+            }
+        ]
+    }
+}
