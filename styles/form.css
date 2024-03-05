@@ -69,6 +69,13 @@ form input.submitBtn:hover {
     background-color: #ff2f00;
 }
 
+output {
+    background-color: #9c2c13;
+    color: whitesmoke;
+    margin: 115px;
+    padding:  5px;
+}
+
 form label.top input:required {
     border-left: red solid 6px;
 }

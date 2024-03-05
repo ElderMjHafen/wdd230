@@ -38,11 +38,13 @@
         <fieldset>
           <legend>Sign In</legend>
           <label class="top">Username* <input type="text" id="username" name="uname" required></label>
-          <label class="top">Password* <input type="password" id="password" name="keyphrase" pattern="[a-zA-Z]{6,}" placeholder="At least six characters long. No numbers." required></label>
+          <label class="top">Password* <input type="password" id="password" name="keyphrase" pattern="[a-zA-Z]{8,}" placeholder="At least six characters long. No numbers." required></label>
           <label class="top">Re-enter Password* <input type="password" id="confirm_password" name="keyphrase2" required></label>
           <label class="top" for="email">Email*<input type="email" id="email" name="email" placeholder="someone@byui.edu" title="A valid byui.edu email address." pattern="[a-zA-Z0-9_.\-]+@byui.edu" required></label>
           <br>
-          <label class="sbs">Page Rating<input type="range" id="page" name="page" min="0" max="10" value="0" step="1"></label><br><br>
+          <div><label class="sbs">Page Rating<input type="range" value="1" min="1" max="10" oninput="rangevalue.value=value"/></label></div> 
+          <output id="rangevalue">1</output><br><br>
+          <script src="scripts/value.js"></script>
           <script src="scripts/pass.js"></script>
         </fieldset>
         <input type="submit" value="Sign In" class="submitBtn">
