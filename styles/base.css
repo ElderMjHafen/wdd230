@@ -201,6 +201,10 @@ main iframe {
 	color: #000;
 }
 
+#activity li {
+	padding: 5px;
+}
+
 footer {
     color: #aef4ff;
     background-color: navy;
