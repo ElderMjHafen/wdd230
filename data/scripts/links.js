@@ -21,7 +21,7 @@ const displayLinks = (weeks) => {
         let card = document.createElement('section');
         let link = document.createElement('h4');
   
-        link.textContent = `${week.lesson}: ${week.tittle}`; // fill in the blank
+        link.textContent = `Week ${week.lesson}: ${week.links}`; // fill in the blank
   
         // Append the section(card) with the created elements
         card.appendChild(link); //fill in the blank
