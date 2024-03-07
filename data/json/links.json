@@ -1,0 +1,122 @@
+{
+    "weeks": [
+    {
+        "lesson": "01",
+        "links": [
+            {
+                "url":"lesson01/media-query.html",
+                "title":"Media Queries"
+            },
+            {
+                "url":"lesson01/holygrail.html",
+                "title":"Holy Grail"
+            }
+        ]
+    },
+        {  
+            "lesson": "02",
+            "links": [
+                {
+                    "url":"lesson02/design.html",
+                    "title":"Design Practice Document"
+                },
+                {
+                    "url":"lesson02/design-principles.html",
+                    "title":"Design Principles Document"
+                }
+            ]
+        },
+        {  
+            "lesson": "03",
+            "links": [
+                {
+                    "url":"http://127.0.0.1:5500/images/w3schools.png",
+                    "title":"w3schools exercise"
+                },
+                {
+                    "url":"https://codepen.io/ElderMjHafen/pen/oNVeqMO",
+                    "title":"Pseudo-element Elements"
+                }
+            ]
+        },
+        {  
+            "lesson": "04",
+            "links": [
+                {
+                    "url":"https://codepen.io/ElderMjHafen/pen/PoLKerR",
+                    "title":"Responsive Menu using 'Hamburger'"
+                },
+                {
+                    "url":"https://codepen.io/ElderMjHafen/pen/zYbpaGe",
+                    "title":"CSS Pseudo-classes"
+                }
+            ]
+        },
+        {  
+            "lesson": "05",
+            "links": [
+                {
+                    "url":"lesson03/bom.html",
+                    "title":"Book of Mormon Favorite Chapters Application"
+                },
+                {
+                    "url":"http://127.0.0.1:5500/lesson03/images/landscape.webp",
+                    "title":"WebP"
+                }
+            ]
+        },
+        {  
+            "lesson": "06",
+            "links": [
+                {
+                    "url":"http://127.0.0.1:5500/lesson06/responsive-images.html",
+                    "title":"Fort Lauderdale Florida Temple"
+                }
+            ]
+        },
+        {  
+            "lesson": "07",
+            "links": [
+                {
+                    "url":"lesson07/lazyload.html",
+                    "title":"Lazy Loading Demenstraction"
+                },
+                {
+                    "url":"lesson07/bom.html",
+                    "title":"Book of Mormon Favorite Chapters - Web Storage API - localStorage"
+                }
+            ]
+        },
+        {  
+            "lesson": "08",
+            "links": [
+                {
+                    "url":"lesson09/tablebuild.html",
+                    "title":"HTML Tables for Data Presentation"
+                },
+                {
+                    "url":"http://127.0.0.1:5500/forms/index.html",
+                    "title":"HTML Form"
+                }
+                ,
+                {
+                    "url":"http://127.0.0.1:5500/form.html",
+                    "title":"Sign Up Form"
+                }
+            ]
+        },
+        {  
+            "lesson": "09",
+            "links": [
+                {
+                    "url":"http://127.0.0.1:5500/new-ward-members.json",
+                    "title":"JSON"
+                },
+                {
+                    "url":"lesson09/prophets.html",
+                    "title":"The Fetch API"
+                }
+            ]
+        }
+    ]
+}
