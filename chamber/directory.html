@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chamber of Commerce</title>
+    <meta
+      name="description"
+      content= "Build a page for the Chamber of Commerse for the website project for
+      WDD 230 - Web Frontend Development."
+    />
+    <meta name="author" content="Michael J. Hafen" />
+    <link rel="icon" href="images/circle_of_commerce.ico">
+    <meta property="og:title" content="Chamber of Commerce" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://eldermjhafen.github.io/wdd230/images/rsz_michael_hafen_pic.jpg" />
+    <meta property="og:url" content="https://eldermjhafen.github.io/wdd230/chamber/index.html" />
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+</head>
+<body>
+    <header>
+        <img src="images/circle_of_commerce.ico" width="110" height="90" alt="Circle Logo">
+        <h1>Hafen Chamber of Commerce</h1>
+        <div id="mode">
+          🌙
+        </div>
+    </header>
+    <button id="menu" title="Nav collapse menu"></button>
+    <nav class="navigation">
+      <a href = "#">Home</a>
+      <a href = "discover.html">Discover</a>
+      <a href = "directory/" target="_blank">Directory</a>
+      <a href = "join.html" target="_blank">Join</a>
+    </nav>
+    <main>
+        <script src="scripts/hamburger.js"></script>
+        <script src="scripts/dark-light-mode.js"></script>
+        <section id="card">
+            <h2 id="members"></h2>
+            <img src="">
+            <div id="cards"></div>
+            <script src="data/scripts/links.js"></script>
+        </section>
+    </main>
+    <footer>
+      <p>&copy;<span id="currentYear"></span></p><br>
+      <p>This is a course project for a fictionous chamber of 
+        commerse for WDD 230, Frontend Web Development Course.</p>
+      <p id = "lastModified">Last Modified</p>
+    </footer>
+    <script src="scripts/getdates.js"></script>
+</body>
+</html>

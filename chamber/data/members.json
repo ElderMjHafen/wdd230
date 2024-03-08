@@ -1,0 +1,53 @@
+{
+    "members": [
+      {
+        "name": "Blueprint Games",
+        "phone": "N/A",
+        "website URLs": "https://www.billiebustup.com/",
+        "memberlevel": 1,
+        "email": "info@billiebustup.com"
+       },
+       {
+        "name": "Toby Fox",
+        "phone": "N/A",
+        "website URLs": "https://deltarune.com/",
+        "memberlevel": 2,
+        "email": "deltarune@fangamer.com"
+       },
+       {
+        "name": "ACE Team",
+        "phone": "N/A",
+        "website URLs": "https://www.aceteam.cl/",
+        "memberlevel": 3,
+        "email": "business@aceteam.cl"
+       },
+       {
+        "name": "Akupara Games",
+        "phone": 7479982193,
+        "website URLs": "https://www.akuparagames.com/",
+        "memberlevel": 4,
+        "email": "team@akuparagames.com"
+       },
+       {
+        "name": "JoseAlientrapph",
+        "phone": "N/A",
+        "website URLs": "https://www.alientrap.com/",
+        "memberlevel": 5,
+        "email": "contact@alientrap.org"
+       },
+       {
+        "name": "Arrowhead Game Studios",
+        "phone": "N/A",
+        "website URLs": "https://www.arrowheadgamestudios.com/",
+        "memberlevel": 6,
+        "email": "contact@arrowheadgs.com"
+       },
+       {
+        "name": "Compulsion Games Inc.",
+        "phone": "N/A",
+        "website URLs": "https://compulsiongames.com/",
+        "memberlevel": 7,
+        "email": "info@compulsiongames.com"
+       }
+    ]
+}
