@@ -22,9 +22,9 @@ const displayMembers = (members) => {
 
       // Build the h2 content out to show the prophet's full name
       name.textContent = `${member.comname}`;
-      phoneNum.textContent = `${member.phone}`;
-      website.textContent = `${member.websiteURLs}`;
-      mail.textContent = `${member.email}`; // fill in the blank
+      phoneNum.textContent = `Phone: ${member.phone}`;
+      website.textContent = `Company Website: ${member.websiteURLs}`;
+      mail.textContent = `Email: ${member.email}`; // fill in the blank
       // Build the image portrait by setting all the relevant attributes
       portrait.setAttribute('src', member.imageurl);
       portrait.setAttribute('alt', `Image of ${member.comname}'s logo`); // fill in the blank
@@ -33,8 +33,11 @@ const displayMembers = (members) => {
       portrait.setAttribute('height', '440');
 
       // Append the section(card) with the created elements
-      card.appendChild(name); //fill in the blank
+      card.appendChild(name);
       card.appendChild(portrait);
+      card.appendChild(phoneNum);
+      card.appendChild(website);
+      card.appendChild(mail);
 
       cards.appendChild(card);
   });

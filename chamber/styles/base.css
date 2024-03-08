@@ -409,6 +409,36 @@ section div.ad-banner:hover {
   transform: scale(1.05);
 }
 
+section #members {
+  padding: 20px;
+}
+
+#members h2, #members h3, #members h4, #members h5{
+  background-color: #0000003e;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+  padding: 10px;
+  width: auto;
+  max-width: 400px;
+}
+
+#members h2 {
+  margin-top: 50px;
+}
+
+#members img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 5px;
+  width: auto;
+  max-width: 325px;
+  box-shadow: 0 0 30px #777;
+  height: 200px;
+  border: 1px solid #333;
+}
+
 /*----------- FORM --------------*/
 form {
 	background-color: rgb(255, 255, 255);
