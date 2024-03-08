@@ -1,53 +1,60 @@
 {
     "members": [
       {
-        "name": "Blueprint Games",
+        "comname": "Blueprint Games",
         "phone": "N/A",
         "websiteURLs": "https://www.billiebustup.com/",
         "memberlevel": 1,
-        "email": "info@billiebustup.com"
+        "email": "info@billiebustup.com",
+        "imageurl": "https://static.wixstatic.com/media/b24a9e_ef59562a51774d669b722cb2932ff6a6~mv2.png/v1/fill/w_674,h_372,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/PDP_BLUEPRINT%20DIGITAL%20MEDIA_BILLIE%20BUST%20.png"
        },
        {
-        "name": "Toby Fox",
+        "comname": "Toby Fox",
         "phone": "N/A",
         "websiteURLs": "https://deltarune.com/",
         "memberlevel": 2,
-        "email": "deltarune@fangamer.com"
+        "email": "deltarune@fangamer.com",
+        "imageurl": "https://cdn.akamai.steamstatic.com/steam/apps/1671210/header.jpg?t=1668504080"
        },
        {
-        "name": "ACE Team",
+        "comname": "ACE Team",
         "phone": "N/A",
         "websiteURLs": "https://www.aceteam.cl/",
         "memberlevel": 3,
-        "email": "business@aceteam.cl"
+        "email": "business@aceteam.cl",
+        "imageurl": "https://www.aceteam.cl/img/logo.png"
        },
        {
-        "name": "Akupara Games",
+        "comname": "Akupara Games",
         "phone": 7479982193,
         "websiteURLs": "https://www.akuparagames.com/",
         "memberlevel": 4,
-        "email": "team@akuparagames.com"
+        "email": "team@akuparagames.com",
+        "imageurl": "https://www.akuparagames.com/wp-content/themes/akuparagames/img/AG_Logo_White_PrimaryHorizonal_SVG.svg"
        },
        {
-        "name": "JoseAlientrapph",
+        "comname": "JoseAlientrapph",
         "phone": "N/A",
         "websiteURLs": "https://www.alientrap.com/",
         "memberlevel": 5,
-        "email": "contact@alientrap.org"
+        "email": "contact@alientrap.org",
+        "imageurl": "https://www.alientrap.com/wp-content/uploads/2022/09/cropped-AT-logo-new-small-a.png"
        },
        {
-        "name": "Arrowhead Game Studios",
+        "comname": "Arrowhead Game Studios",
         "phone": "N/A",
         "websiteURLs": "https://www.arrowheadgamestudios.com/",
         "memberlevel": 6,
-        "email": "contact@arrowheadgs.com"
+        "email": "contact@arrowheadgs.com",
+        "imageurl": "https://www.interactive.org/images/games_developers/arrowhead-lg.jpg"
        },
        {
-        "name": "Compulsion Games Inc.",
+        "comname": "Compulsion Games Inc.",
         "phone": "N/A",
         "websiteURLs": "https://compulsiongames.com/",
         "memberlevel": 7,
-        "email": "info@compulsiongames.com"
+        "email": "info@compulsiongames.com",
+        "imageurl": "https://static.wikia.nocookie.net/we-happy-few/images/b/b2/Compulsion-Games-Montreal-2019-logo-1.png/revision/latest?cb=20200729123718"
        }
     ]
 }

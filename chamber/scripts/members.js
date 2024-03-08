@@ -14,20 +14,26 @@ const displayMembers = (members) => {
     members.forEach((member) => {
       // Create elements to add to the div.cards element
       let card = document.createElement('section');
-      let fullName = document.createElement('h2');
+      let name = document.createElement('h2');
       let portrait = document.createElement('img');
+      let phoneNum = document.createElement('h3');
+      let website = document.createElement('h4');
+      let mail = document.createElement('h5');
 
       // Build the h2 content out to show the prophet's full name
-      fullName.textContent = `${member.name} ${member.phone} ${member.phone}`; // fill in the blank
+      name.textContent = `${member.comname}`;
+      phoneNum.textContent = `${member.phone}`;
+      website.textContent = `${member.websiteURLs}`;
+      mail.textContent = `${member.email}`; // fill in the blank
       // Build the image portrait by setting all the relevant attributes
       portrait.setAttribute('src', member.imageurl);
-      portrait.setAttribute('alt', `Portrait of ${member.name} ${member.lastname}`); // fill in the blank
+      portrait.setAttribute('alt', `Image of ${member.comname}'s logo`); // fill in the blank
       portrait.setAttribute('loading', 'lazy');
       portrait.setAttribute('width', '340');
       portrait.setAttribute('height', '440');
 
       // Append the section(card) with the created elements
-      card.appendChild(fullName); //fill in the blank
+      card.appendChild(name); //fill in the blank
       card.appendChild(portrait);
 
       cards.appendChild(card);
