@@ -429,9 +429,14 @@ section #members {
   max-width: 400px;
 }
 
+#members h3, #members h4, #members h5 {
+  font-size: smaller;
+}
+
 #members h2 {
   font-family: "Roboto";
   font-weight: bolder;
+  font-size: larger;
   font-style: italic;
   margin-top: 50px;
 }

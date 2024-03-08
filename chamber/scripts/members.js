@@ -24,7 +24,28 @@ const displayMembers = (members) => {
       name.textContent = `${member.comname}`;
       phoneNum.textContent = `Phone: ${member.phone}`;
       website.textContent = `Company Website: ${member.websiteURLs}`;
-      mail.textContent = `Email: ${member.email}`; // fill in the blank
+      mail.textContent = `Email: /${member.email}`;
+      /** *
+
+      members.websiteURLs.forEach((web) => {
+        let link1 = document.createElement('a');
+        link1.textContent = member.websiteURLs;
+        link1.setAttribute("href", member.website);
+        website.appendChild(link1);
+      });
+
+      mail.textContent = `Email: `;
+
+
+      members.email.forEach((eml) => {
+        let link2 = document.createElement('a');
+        link2.textContent = member.email;
+        link2.setAttribute("href", member.email);
+        mail.appendChild(link2);
+      });
+      /**/
+     
+
       // Build the image portrait by setting all the relevant attributes
       portrait.setAttribute('src', member.imageurl);
       portrait.setAttribute('alt', `Image of ${member.comname}'s logo`); // fill in the blank
