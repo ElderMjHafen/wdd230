@@ -410,7 +410,13 @@ section div.ad-banner:hover {
 }
 
 section #members {
+  display: grid;
   padding: 20px;
+}
+#members {
+	grid-template-columns: repeat(auto-fit, minmax(325px, 1fr));
+	grid-gap: 20px;
+	align-items: center;
 }
 
 #members h2, #members h3, #members h4, #members h5{
@@ -424,11 +430,16 @@ section #members {
 }
 
 #members h2 {
+  font-family: "Roboto";
+  font-weight: bolder;
+  font-style: italic;
   margin-top: 50px;
 }
 
+
+
 #members img {
-  display: block;
+  
   margin-left: auto;
   margin-right: auto;
   padding: 5px;
