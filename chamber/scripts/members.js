@@ -1,5 +1,5 @@
 const url = 'https://eldermjhafen.github.io/wdd230/chamber/data/members.json';
-const cards = document.querySelector('#cards');
+const cards = document.querySelector('#members');
 
 async function getMembertData() {
     const response = await fetch(url);
