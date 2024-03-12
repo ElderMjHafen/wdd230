@@ -452,14 +452,12 @@ section div.ad-banner:hover {
 section #members {
   display: grid;
   padding: 20px;
-}
-#members {
-	grid-template-columns: repeat(auto-fit, minmax(325px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(325px, 1fr));
 	grid-gap: 20px;
 	align-items: center;
 }
 
-#members h2, #members h3, #members h4, #members h5{
+#members h3, #members h4, #members h5{
   background-color: #0000003e;
   margin-left: auto;
   margin-right: auto;
@@ -467,21 +465,22 @@ section #members {
   padding: 10px;
   width: auto;
   max-width: 400px;
-}
-
-#members h3, #members h4, #members h5 {
   font-size: smaller;
 }
 
 #members h2 {
+  background-color: #0000003e;
+  margin-left: auto;
+  margin-right: auto;
   font-family: "Roboto";
   font-weight: bolder;
   font-size: larger;
   font-style: italic;
   margin-top: 50px;
+  padding: 10px;
+  width: auto;
+  max-width: 400px;
 }
-
-
 
 #members img {
   
