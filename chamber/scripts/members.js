@@ -27,22 +27,27 @@ const displayMembers = (members) => {
       mail.textContent = `Email: /${member.email}`;
       /** *
 
-      members.websiteURLs.forEach((web) => {
+    const displayLinks = (websiteURLs) => {
+      console.log(websiteURLs);
+    
+      websiteURLs.forEach((web) => {
+        // Create elements to add to the div.cards element
+        let p = document.createElement('p');
+        p.textContent = `Company Website: `; // fill in the blank
+
+
+        
         let link1 = document.createElement('a');
         link1.textContent = member.websiteURLs;
-        link1.setAttribute("href", member.website);
-        website.appendChild(link1);
-      });
-
-      mail.textContent = `Email: `;
-
-
-      members.email.forEach((eml) => {
-        let link2 = document.createElement('a');
-        link2.textContent = member.email;
-        link2.setAttribute("href", member.email);
-        mail.appendChild(link2);
-      });
+        link1.setAttribute("href",member.websiteURLs);
+        // Append the section(card) with the created elements
+        p.appendChild(link1); //fill in the blank
+        
+        list1.appendChild(p);
+  
+        card.appendChild(list1);
+    });
+}
       /**/
      
 
