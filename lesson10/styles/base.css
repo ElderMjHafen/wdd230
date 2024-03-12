@@ -1,0 +1,238 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+body {
+    text-align: center;
+    /*display: grid;
+    
+    height: 100vh;
+    grid-template-columns: 2fr auto;
+    grid-template-rows: auto auto 1fr auto;*/
+}
+h3 {
+    align-items: center;
+    justify-content: center;
+}
+
+iframe {
+    height: 200px;
+    width: 75%;
+    margin: 20px;
+
+	background: black;
+    animation: fade 10s;
+}
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+section span {
+	font-family: 'roboto';
+	font-size: 15px;
+	font-weight: bold;
+	background: #0000005a;
+	padding: 10px;
+}
+
+header {
+	background-color: indigo;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 20px;
+	border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+img {
+    margin: 10px;
+    height: 100px;
+    width: 130px;
+}
+
+.hero {
+    margin: 10px auto;
+	position: relative;
+	border: 1px solid rgba(0,0,0,.1);
+}
+
+.hero img {
+    width: 98%;
+    height: auto;
+    object-fit: cover;
+}
+
+.herolabel {
+	position: absolute;
+	color: #000;
+	top: 30px;
+	left: 30px;
+	background: radial-gradient(#fffffff9, #212d64e5);
+	border: 1px solid rgba(255, 255, 255, 0.75);
+	padding: 1.5rem;
+	box-shadow: 0 0 3rem #fff;
+	opacity: 0.75;
+}
+
+.herolabel span {
+	margin: 0;
+	padding: .25rem;
+	font-weight: 700;
+	font-size: 1.25rem;
+	font-family:"Great Vibes", serif;
+}
+
+h1 {
+    color: white;
+}
+
+/* small view navigation */
+#menu {
+	font-size: 1.5rem;
+	border: 1px solid rgba(0,0,0,.3);
+	padding: 3px 7px 6px;
+    margin: 10px;
+    margin-left: 15px;
+	background-color: #dfdfdf;
+	color: #000;
+ 	position: absolute;
+	top: .50em;
+	right: .50em;
+}
+
+#menu::before {
+	content: "☰";
+}
+
+#menu.open::before {
+	content: "X";
+    font-family: "roboto";
+}
+
+.navigation {
+	display: flex;
+	flex-direction: column;
+	list-style: none;
+	background-color: #000000;
+	color: #fff;
+}
+
+.navigation a {
+	display: none;
+	padding: 1rem;
+	text-align: center;
+	text-decoration: none;
+	color: #fff;
+}
+.navigation a:hover, section a:hover {
+	font-weight: 700;
+    font-size: larger;
+    
+    color: #aef4ff;
+}
+
+/* when the button is clicked - the open class is toggled (added/removed) */
+.open a {
+	display: block;
+}
+
+.active::before {
+	content: "📍";  /* just a wayfinding symbol for the user */
+}
+
+.stuff {
+	margin: .5em;
+	border: 1px solid rgba(0,0,0,.1);
+	background-color: #bed;
+	max-width: 580px;
+	height: 100vh;
+	
+}
+
+nav {
+    display: block;
+    color: white;
+    background-color: #000;
+    padding: 5px;
+}
+h2, h3 {
+    margin: 0;
+}
+
+nav a {
+    display: block;
+    text-align: center;
+}
+nav a:hover, section a:hover {
+	text-decoration:underline;
+    color: red;
+}
+/**Which is better?**/
+section.card::first-letter {
+    font-family: "Roboto";
+    color: #ff0000;
+    font-size: 200%;
+}
+/*/
+section.card::before {
+    content: "✨";
+}
+/**/
+
+section a, nav a {
+    color: rgb(255, 255, 255);
+    padding: 5px;
+}
+
+a:visited {
+    text-decoration: none;
+    color: rgb(251, 255, 0);
+}
+
+main {
+    color: #ffffff;
+    background: rgb(61, 44, 185);
+    padding: 10px;
+}
+main iframe {
+	color: #000;
+}
+
+#activity li {
+	padding: 5px;
+}
+
+footer {
+    color: #aef4ff;
+    background-color: navy;
+    padding: 20px;
+}
+footer p {
+    margin: 0;
+}
+/*----------- WEATHER ------------*/
+main p {
+	display: inline-block;
+	background-color: #eb990b97;
+	font: 1em "Roboto";
+	font-weight: bold;
+	width: 200px;
+	padding: 5px;
+	margin: 5px auto 0;
+	margin-bottom: 0px;
+    border-radius: 20px;
+	text-align: center;
+}
+
+figure {
+	background-color: #eb990b97;
+	width: 200px;
+	margin: 5px;
+	margin-top: 0px;
+	padding: 35px 30px;
+    margin: 30px auto 0;
+    border-radius: 20px;
+}
