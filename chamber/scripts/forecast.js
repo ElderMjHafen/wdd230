@@ -16,7 +16,7 @@ navigator.geolocation.getCurrentPosition(function(position) {
   var lon = position.coords.longitude;
 
   // Call the OpenWeatherMap API with the obtained coordinates
-  const url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&units=imperial&appid=89bd6bba4fd77237e2f8c045af14b381`;
+  const url = `https://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${lon}&units=imperial&appid=89bd6bba4fd77237e2f8c045af14b381`;
   console.log(url);
 
 

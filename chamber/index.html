@@ -70,21 +70,26 @@
         </div>
       </section>
       <section class = "card">
-        <h3>Weather</h3>
-        <div class="weather-card">
-          <div class="weather">
-            <h4>Today's Weather
-              <ul> 
-                 <li>High: 42&deg;F</li>
-                 <li>Low: 19&deg;F</li>
-                 <li>Chance of Precipitation: 11%</li>
-                 <li>Wind: 3.5 mph NW</li>
-                 <li>Wind Chill: <span id="windChill"></span>&deg;F</li>  
-              </ul>
-            </h4>
-            <script src="scripts/windchill.js"></script>
-          </div>
-        </div>
+        <section id = "weather">
+          <h3>Weather</h3>
+          <p>
+            <figure>
+                <img id="weather-icon" src="" alt="">
+                <figcaption></figcaption>
+            </figure><br>
+            <span id="current-temp"></span>
+            <span id="ctemp"></span>
+          </p>
+          <ul> 
+            <li><span id="high"></span></li>
+            <li><span id="low"></span></li>
+            <li>Chance of Precipitation: <span id="pre"></span></li>
+            <li>Wind: <span id="windS"></span></li>
+            <li>Wind Chill: <span id="windChill"></span></li>  
+          </ul>
+          <script src="scripts/windchill.js"></script>
+          <script defer src="scripts/forecast.js"></script>
+        </section>
       </section>
       <section class = "card">
         <h4>Get ready for Spring</h4>
