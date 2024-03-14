@@ -1,43 +1,83 @@
-const apiKey = "97ed86b99fdcf738c7a080e0fa9fde20";
-const apiUrl =
-  "https://api.openweathermap.org/data/2.5/weather?&units=metric&q=";
-const searchBox = document.querySelector(".search input");
-const searchBtn = document.querySelector(".search button");
-const weatherIcon = document.querySelector(".weather-icon");
-async function checkWeather(city) {
-  const response = await fetch(apiUrl + city + `&appid=${apiKey}`);
-  var data = await response.json();
-  console.log(data);
+const currentTemp = document.querySelector('#current-temp');
+const high = document.querySelector('#high');
+const low = document.querySelector('#low');
+const pre = document.querySelector('#pre');
+const wind = document.querySelector('#windS');
+//const windChill = document.querySelector('#windChill');
+//const direction = ``;
 
-  document.querySelector(".city").innerHTML = data.name;
-  document.querySelector(".temp").innerHTML = Math.round(data.main.temp) + "°C";
-  document.querySelector(".humidity").innerHTML = data.main.humidity + "%";
-  document.querySelector(".wind").innerHTML = data.wind.speed + " Km/h";
+const weatherIcon = document.querySelector('#weather-icon');
+const captionDesc = document.querySelector('figcaption');
 
-  if (data.weather[0].main == "Clouds") {
-    weatherIcon.src = "https://cdn-icons-png.flaticon.com/512/7774/7774417.png";
-  } else if (data.weather[0].main == "Clear") {
-    weatherIcon.src =
-      "https://static-00.iconduck.com/assets.00/clear-day-icon-1024x1024-exbd0lm2.png";
-  } else if (data.weather[0].main == "Mist") {
-    weatherIcon.src =
-      "https://cdn3d.iconscout.com/3d/premium/thumb/weather-6546350-5376613.png";
-  } else if (data.weather[0].main == "Snow") {
-    weatherIcon.src =
-      "https://static.vecteezy.com/system/resources/previews/022/287/856/original/3d-rendering-snowy-weather-icon-3d-render-snow-with-cloud-icon-snowfall-png.png";
-  } else if (data.weather[0].main == "Smoke") {
-    weatherIcon.src =
-      "https://cdn3d.iconscout.com/3d/premium/thumb/smoke-5175068-4328031.png";
-  } else if (data.weather[0].main == "Rain") {
-    weatherIcon.src =
-      "https://static.vecteezy.com/system/resources/previews/024/825/182/non_2x/3d-weather-icon-day-with-rain-free-png.png";
-  } else if (data.weather[0].main == "Drizzle") {
-    weatherIcon.src =
-      "https://www.freeiconspng.com/thumbs/cloud-rain-icons/cloud-rain-weather-icon-25.png";
+//49.74937832297326, 6.639829910379418
+// Get the current location
+navigator.geolocation.getCurrentPosition(function(position) {
+  var lat = position.coords.latitude;
+  var lon = position.coords.longitude;
+
+  // Call the OpenWeatherMap API with the obtained coordinates
+  const url = `https://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${lon}&units=imperial&appid=89bd6bba4fd77237e2f8c045af14b381`;
+  console.log(url);
+
+
+
+  async function apiFetch() {
+    try {
+      const response = await fetch(url);
+      if (response.ok) {
+        const data = await response.json();
+        console.log(data); // testing only
+        displayResults(data); // uncomment when ready
+      } else {
+          throw Error(await response.text());
+      }
+    } catch (error) {
+        console.log(error);
+    }
   }
-}
 
-searchBtn.addEventListener("click", () => {
-  checkWeather(searchBox.value);
+  
+  apiFetch();
 });
-checkWeather();
+
+function displayResults(data) {
+  console.log(`degree:`, data.wind.deg);
+  if (data.wind.deg == 0) {
+    var direction = `N`;
+  }
+  else if (data.wind.deg < 90) {
+    var direction = `NE`;
+  }
+  else if (data.wind.deg == 90) {
+    var direction = `E`;
+  }
+  else if (data.wind.deg < 180) {
+    var direction = `SE`;
+  }
+  else if (data.wind.deg == 180) {
+    var direction = `S`;
+  }
+  else if ( data.wind.deg < 270) {
+    var direction = `SW`;
+  }
+  else if (data.wind.deg == 270) {
+    var direction = `W`;
+  }
+  else {
+    var direction = `NS`;
+  }
+  console.log(direction);
+  
+  console.log(`TEMP:`, data.main.temp);
+  currentTemp.innerHTML = `${data.main.temp}&deg;F`;
+  high.innerHTML = `High: ${data.main.temp_max}&deg;F`;
+  low.innerHTML = `Low: ${data.main.temp_min}&deg;F`;
+  pre.innerHTML = `${data.main.humidity}%`;
+  wind.innerHTML = `${data.wind.speed} MPH ` + direction;
+  const iconsrc = `https://openweathermap.org/img/w/${data.weather[0].icon}.png`;
+  //console.log(iconsrc);
+  let desc = data.weather[0].description;
+  weatherIcon.setAttribute('src', iconsrc);
+  weatherIcon.setAttribute('alt', desc);
+  captionDesc.textContent = `${desc}`;
+}

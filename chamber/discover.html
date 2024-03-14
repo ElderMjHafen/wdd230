@@ -67,6 +67,27 @@
             <img src="https://picsum.photos/seed/picsum/200/300" alt="View of Mountain from ground pearing over hill" loading="lazy" width="200" height="300">
           </picture>
         <section class = "card">
+          <section id = "weather">
+            <h3>Today's Weather</h3>
+            <p>
+              <figure>
+                  <img id="weather-icon" src="" alt="">
+                  <figcaption></figcaption>
+              </figure><br>
+              <span id="current-temp"></span>
+              <span id="ctemp"></span>
+            </p>
+            <ul> 
+              <li><span id="high"></span></li>
+              <li><span id="low"></span></li>
+              <li>Chance of Precipitation: <span id="pre"></span></li>
+              <li>Wind: <span id="windS"></span></li>
+              <li>Wind Chill: <span id="windChill"></span></li>  
+            </ul>
+            <script src="scripts/windchill.js"></script>
+            <script defer src="scripts/weather.js"></script>
+          </section>
+          <!----
           <div class="weather-card">
             <div class="weather">
               <h2>Today's Weather</h2>
@@ -80,6 +101,7 @@
               <script src="scripts/windchill.js"></script>
             </div>
           </div>
+        -->
         </section>
         <section class = "card">
           <h2>Current Events</h2>
