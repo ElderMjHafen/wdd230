@@ -36,6 +36,12 @@
       <a href = "join.html" target="_blank">Join</a>
     </nav>
     <main>
+      <div id="banner">
+        <button class="close-button" onclick="closeBanner()">Close</button>
+        <p>Join us for the Chamber of Commerce Meet and Greet!</p>
+        <p>7:00 p.m. on Monday, Tuesday, and Wednesday</p>
+      </div>
+      <script defer src="scripts/banner.js"></script>
       <script src="scripts/hamburger.js"></script>
       <script src="scripts/dark-light-mode.js"></script>
       <section class="logo">
@@ -74,19 +80,45 @@
           <h3>Weather</h3>
           <p>
             <figure>
-                <img id="weather-icon" src="" alt="">
-                <figcaption></figcaption>
+              <img id="weather-icon" src="" alt="">
+              <figcaption></figcaption>
+              <span id="current-temp"></span>
+              <span id="ctemp"></span>
+              <ul> 
+                <li><span id="high"></span></li>
+                <li><span id="low"></span></li>
+                <li>Chance of Precipitation: <span id="pre"></span></li>
+                <li>Wind: <span id="windS"></span></li>
+                <li>Wind Chill: <span id="windChill"></span></li>  
+              </ul>
             </figure><br>
-            <span id="current-temp"></span>
-            <span id="ctemp"></span>
+            <figure>
+              <img id="weather-icon2" src="" alt="">
+              <figcaption id="fig2"></figcaption>
+              <span id="current-temp2"></span>
+              <span id="ctemp2"></span>
+              <ul> 
+                <li><span id="high2"></span></li>
+                <li><span id="low2"></span></li>
+                <li>Chance of Precipitation: <span id="pre2"></span></li>
+                <li>Wind: <span id="windS2"></span></li>
+                <li>Wind Chill: <span id="windChill2"></span></li>  
+              </ul>
+            </figure><br>
+            <figure>
+              <img id="weather-icon3" src="" alt="">
+              <figcaption id="fig3"></figcaption>
+              <span id="current-temp3"></span>
+              <span id="ctemp3"></span>
+              <ul> 
+                <li><span id="high3"></span></li>
+                <li><span id="low3"></span></li>
+                <li>Chance of Precipitation: <span id="pre3"></span></li>
+                <li>Wind: <span id="windS3"></span></li>
+                <li>Wind Chill: <span id="windChill3"></span></li>  
+              </ul>
+            </figure><br>
           </p>
-          <ul> 
-            <li><span id="high"></span></li>
-            <li><span id="low"></span></li>
-            <li>Chance of Precipitation: <span id="pre"></span></li>
-            <li>Wind: <span id="windS"></span></li>
-            <li>Wind Chill: <span id="windChill"></span></li>  
-          </ul>
           <script src="scripts/windchill.js"></script>
           <script defer src="scripts/forecast.js"></script>
         </section>

@@ -24,7 +24,9 @@ const displayMembers = (members) => {
       name.textContent = `${member.comname}`;
       phoneNum.textContent = `Phone: ${member.phone}`;
       website.textContent = `Company Website: ${member.websiteURLs}`;
+      website.setAttribute("href",member.websiteURLs);
       mail.textContent = `Email: /${member.email}`;
+      mail.setAttribute("href",member.email);
       /** *
 
     const displayLinks = (websiteURLs) => {
