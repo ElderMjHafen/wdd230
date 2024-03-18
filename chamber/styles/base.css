@@ -42,8 +42,8 @@ body {
   background-color: #ccc;
   border: none;
   color: black;
-  padding: 5px 10px;
-  font-size: 16px;
+  padding: 2px 7px;
+  font-size: 13px;
   cursor: pointer;
 }
 
@@ -627,8 +627,9 @@ form label.top input:required:valid {
 /*Banner*/
 #banner {
   background-color: #f4f4f4;
+  color: #000;
   text-align: center;
-  padding: 20px;
+  padding: 22px;
   font-size: 18px;
   font-family: Arial, sans-serif;
   position: relative;
