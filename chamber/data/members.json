@@ -36,7 +36,7 @@
         "comname": "JoseAlientrapph",
         "phone": "N/A",
         "websiteURLs": "https://www.alientrap.com/",
-        "memberlevel": 5,
+        "memberlevel": 3,
         "email": "contact@alientrap.org",
         "imageurl": "https://www.alientrap.com/wp-content/uploads/2022/09/cropped-AT-logo-new-small-a.png"
        },
@@ -44,7 +44,7 @@
         "comname": "Arrowhead Game Studios",
         "phone": "N/A",
         "websiteURLs": "https://www.arrowheadgamestudios.com/",
-        "memberlevel": 6,
+        "memberlevel": 2,
         "email": "contact@arrowheadgs.com",
         "imageurl": "https://www.interactive.org/images/games_developers/arrowhead-lg.jpg"
        },
@@ -52,7 +52,7 @@
         "comname": "Compulsion Games Inc.",
         "phone": "N/A",
         "websiteURLs": "https://compulsiongames.com/",
-        "memberlevel": 7,
+        "memberlevel": 1,
         "email": "info@compulsiongames.com",
         "imageurl": "https://cgcomprod.blob.core.windows.net/strapi-uploads/assets/small_2009_b2cf9c1ffb.png"
        }
