@@ -4,7 +4,7 @@
         "comname": "Blueprint Games",
         "phone": "N/A",
         "websiteURLs": "https://www.billiebustup.com/",
-        "memberlevel": 1,
+        "memberlevel": "GOLD",
         "email": "info@billiebustup.com",
         "imageurl": "https://static.wixstatic.com/media/b24a9e_ef59562a51774d669b722cb2932ff6a6~mv2.png/v1/fill/w_674,h_372,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/PDP_BLUEPRINT%20DIGITAL%20MEDIA_BILLIE%20BUST%20.png"
        },
@@ -12,7 +12,7 @@
         "comname": "Toby Fox",
         "phone": "N/A",
         "websiteURLs": "https://deltarune.com/",
-        "memberlevel": 2,
+        "memberlevel": "SILVER",
         "email": "deltarune@fangamer.com",
         "imageurl": "https://cdn.akamai.steamstatic.com/steam/apps/1671210/header.jpg?t=1668504080"
        },
@@ -20,7 +20,7 @@
         "comname": "ACE Team",
         "phone": "N/A",
         "websiteURLs": "https://www.aceteam.cl/",
-        "memberlevel": 3,
+        "memberlevel": "BRONZE",
         "email": "business@aceteam.cl",
         "imageurl": "https://www.aceteam.cl/img/logo.png"
        },
@@ -28,7 +28,7 @@
         "comname": "Akupara Games",
         "phone": "(747) 998-2193",
         "websiteURLs": "https://www.akuparagames.com/",
-        "memberlevel": 4,
+        "memberlevel": "NP",
         "email": "team@akuparagames.com",
         "imageurl": "https://www.akuparagames.com/wp-content/themes/akuparagames/img/AG_Logo_White_PrimaryHorizonal_SVG.svg"
        },
@@ -36,7 +36,7 @@
         "comname": "JoseAlientrapph",
         "phone": "N/A",
         "websiteURLs": "https://www.alientrap.com/",
-        "memberlevel": 3,
+        "memberlevel": "BRONZE",
         "email": "contact@alientrap.org",
         "imageurl": "https://www.alientrap.com/wp-content/uploads/2022/09/cropped-AT-logo-new-small-a.png"
        },
@@ -44,7 +44,7 @@
         "comname": "Arrowhead Game Studios",
         "phone": "N/A",
         "websiteURLs": "https://www.arrowheadgamestudios.com/",
-        "memberlevel": 2,
+        "memberlevel": "SILVER",
         "email": "contact@arrowheadgs.com",
         "imageurl": "https://www.interactive.org/images/games_developers/arrowhead-lg.jpg"
        },
@@ -52,7 +52,7 @@
         "comname": "Compulsion Games Inc.",
         "phone": "N/A",
         "websiteURLs": "https://compulsiongames.com/",
-        "memberlevel": 1,
+        "memberlevel": "GOLD",
         "email": "info@compulsiongames.com",
         "imageurl": "https://cgcomprod.blob.core.windows.net/strapi-uploads/assets/small_2009_b2cf9c1ffb.png"
        }

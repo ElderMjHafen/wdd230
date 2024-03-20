@@ -19,37 +19,36 @@ const displayMembers = (members) => {
       let phoneNum = document.createElement('h3');
       let website = document.createElement('h4');
       let mail = document.createElement('h5');
+      let mlevel = document.createElement('h6');
 
       // Build the h2 content out to show the prophet's full name
       name.textContent = `${member.comname}`;
       phoneNum.textContent = `Phone: ${member.phone}`;
       website.textContent = `Company Website: ${member.websiteURLs}`;
-      website.setAttribute("href",member.websiteURLs);
-      mail.textContent = `Email: /${member.email}`;
-      mail.setAttribute("href",member.email);
+      website.setAttribute("href", member.websiteURLs);
+      mail.textContent = `Email: ${member.email}`;
+      mail.setAttribute("href", member.email);
+      mlevel.textContent = `${member.memberlevel}`;
       /** *
 
     const displayLinks = (websiteURLs) => {
       console.log(websiteURLs);
     
-      websiteURLs.forEach((web) => {
+      websiteURLs.forEach((_web) => {
         // Create elements to add to the div.cards element
+        //let list = document.createElement('li');
         let p = document.createElement('p');
         p.textContent = `Company Website: `; // fill in the blank
-
-
         
         let link1 = document.createElement('a');
         link1.textContent = member.websiteURLs;
         link1.setAttribute("href",member.websiteURLs);
         // Append the section(card) with the created elements
         p.appendChild(link1); //fill in the blank
-        
-        list1.appendChild(p);
-  
-        card.appendChild(list1);
+        link1.appendChild(p);
+        card.appendChild(link1);
     });
-}
+  }
       /**/
      
 
