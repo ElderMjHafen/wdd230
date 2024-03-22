@@ -6,7 +6,8 @@
         "websiteURLs": "https://www.billiebustup.com/",
         "memberlevel": "GOLD",
         "email": "info@billiebustup.com",
-        "imageurl": "https://static.wixstatic.com/media/b24a9e_ef59562a51774d669b722cb2932ff6a6~mv2.png/v1/fill/w_674,h_372,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/PDP_BLUEPRINT%20DIGITAL%20MEDIA_BILLIE%20BUST%20.png"
+        "imageurl": "https://static.wixstatic.com/media/b24a9e_ef59562a51774d669b722cb2932ff6a6~mv2.png/v1/fill/w_674,h_372,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/PDP_BLUEPRINT%20DIGITAL%20MEDIA_BILLIE%20BUST%20.png",
+        "position": 1
        },
        {
         "comname": "Toby Fox",
@@ -14,7 +15,8 @@
         "websiteURLs": "https://deltarune.com/",
         "memberlevel": "SILVER",
         "email": "deltarune@fangamer.com",
-        "imageurl": "https://cdn.akamai.steamstatic.com/steam/apps/1671210/header.jpg?t=1668504080"
+        "imageurl": "https://cdn.akamai.steamstatic.com/steam/apps/1671210/header.jpg?t=1668504080",
+        "position": 2
        },
        {
         "comname": "ACE Team",
@@ -22,7 +24,8 @@
         "websiteURLs": "https://www.aceteam.cl/",
         "memberlevel": "BRONZE",
         "email": "business@aceteam.cl",
-        "imageurl": "https://www.aceteam.cl/img/logo.png"
+        "imageurl": "https://www.aceteam.cl/img/logo.png",
+        "position": 0
        },
        {
         "comname": "Akupara Games",
@@ -30,7 +33,8 @@
         "websiteURLs": "https://www.akuparagames.com/",
         "memberlevel": "NP",
         "email": "team@akuparagames.com",
-        "imageurl": "https://www.akuparagames.com/wp-content/themes/akuparagames/img/AG_Logo_White_PrimaryHorizonal_SVG.svg"
+        "imageurl": "https://www.akuparagames.com/wp-content/themes/akuparagames/img/AG_Logo_White_PrimaryHorizonal_SVG.svg",
+        "position": 0
        },
        {
         "comname": "JoseAlientrapph",
@@ -38,7 +42,8 @@
         "websiteURLs": "https://www.alientrap.com/",
         "memberlevel": "BRONZE",
         "email": "contact@alientrap.org",
-        "imageurl": "https://www.alientrap.com/wp-content/uploads/2022/09/cropped-AT-logo-new-small-a.png"
+        "imageurl": "https://www.alientrap.com/wp-content/uploads/2022/09/cropped-AT-logo-new-small-a.png",
+        "position": 0
        },
        {
         "comname": "Arrowhead Game Studios",
@@ -46,7 +51,8 @@
         "websiteURLs": "https://www.arrowheadgamestudios.com/",
         "memberlevel": "SILVER",
         "email": "contact@arrowheadgs.com",
-        "imageurl": "https://www.interactive.org/images/games_developers/arrowhead-lg.jpg"
+        "imageurl": "https://www.interactive.org/images/games_developers/arrowhead-lg.jpg",
+        "position": 3
        },
        {
         "comname": "Compulsion Games Inc.",
@@ -54,7 +60,8 @@
         "websiteURLs": "https://compulsiongames.com/",
         "memberlevel": "GOLD",
         "email": "info@compulsiongames.com",
-        "imageurl": "https://cgcomprod.blob.core.windows.net/strapi-uploads/assets/small_2009_b2cf9c1ffb.png"
+        "imageurl": "https://cgcomprod.blob.core.windows.net/strapi-uploads/assets/small_2009_b2cf9c1ffb.png",
+        "position": 4
        }
     ]
 }

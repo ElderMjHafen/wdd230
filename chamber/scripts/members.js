@@ -20,15 +20,27 @@ const displayMembers = (members) => {
       let website = document.createElement('h4');
       let mail = document.createElement('h5');
       let mlevel = document.createElement('h6');
+      let num = Math.floor(Math.random() * 4 ) + 1;
 
       // Build the h2 content out to show the prophet's full name
-      name.textContent = `${member.comname}`;
-      phoneNum.textContent = `Phone: ${member.phone}`;
-      website.textContent = `Company Website: ${member.websiteURLs}`;
-      website.setAttribute("href", member.websiteURLs);
-      mail.textContent = `Email: ${member.email}`;
-      mail.setAttribute("href", member.email);
-      mlevel.textContent = `${member.memberlevel}`;
+      if (member.memberlevel == "GOLD" || member.memberlevel == "SILVER") {// && num == member.position) {
+        console.log(num);
+        name.textContent = `${member.comname}`;
+        phoneNum.textContent = `Phone: ${member.phone}`;
+        website.textContent = `Company Website: ${member.websiteURLs}`;
+        website.setAttribute("href", member.websiteURLs);
+        mail.textContent = `Email: ${member.email}`;
+        mail.setAttribute("href", member.email);
+        mlevel.textContent = `${member.memberlevel}`;
+
+        // Build the image portrait by setting all the relevant attributes
+        portrait.setAttribute('src', member.imageurl);
+        portrait.setAttribute('alt', `Image of ${member.comname}'s logo`); // fill in the blank
+        portrait.setAttribute('loading', 'lazy');
+        portrait.setAttribute('width', '340');
+        portrait.setAttribute('height', '440');
+      
+      
       /** *
 
     const displayLinks = (websiteURLs) => {
@@ -50,14 +62,6 @@ const displayMembers = (members) => {
     });
   }
       /**/
-     
-
-      // Build the image portrait by setting all the relevant attributes
-      portrait.setAttribute('src', member.imageurl);
-      portrait.setAttribute('alt', `Image of ${member.comname}'s logo`); // fill in the blank
-      portrait.setAttribute('loading', 'lazy');
-      portrait.setAttribute('width', '340');
-      portrait.setAttribute('height', '440');
 
       // Append the section(card) with the created elements
       card.appendChild(name);
@@ -65,7 +69,9 @@ const displayMembers = (members) => {
       card.appendChild(phoneNum);
       card.appendChild(website);
       card.appendChild(mail);
+      card.appendChild(mlevel);
 
       cards.appendChild(card);
+    }
   });
 }
