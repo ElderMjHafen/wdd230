@@ -32,8 +32,8 @@
     <nav class="navigation">
       <a href = "#">Home</a>
       <a href = "discover.html">Discover</a>
-      <a href = "directory.html" target="_blank">Directory</a>
-      <a href = "join.html" target="_blank">Join</a>
+      <a href = "directory.html">Directory</a>
+      <a href = "join.html">Join</a>
     </nav>
     <main>
       <div id="banner">
@@ -77,11 +77,11 @@
       </section>
       <section class = "card">
         <section id = "weather">
-          <h3>Weather</h3>
-          <p>
+          <h3>Current Weather</h3>
             <figure>
-              <img id="weather-icon" src="" alt="">
+              <img id="weather-icon" src="jsonlink" alt="jsonlink">
               <figcaption></figcaption>
+            </figure>
               <span id="current-temp"></span>
               <span id="ctemp"></span>
               <ul> 
@@ -91,10 +91,11 @@
                 <li>Wind: <span id="windS"></span></li>
                 <li>Wind Chill: <span id="windChill"></span></li>  
               </ul>
-            </figure><br>
+            <br>
             <figure>
-              <img id="weather-icon2" src="" alt="">
+              <img id="weather-icon2" src="jsonlink" alt="jsonlink">
               <figcaption id="fig2"></figcaption>
+            </figure>
               <span id="current-temp2"></span>
               <span id="ctemp2"></span>
               <ul> 
@@ -104,10 +105,11 @@
                 <li>Wind: <span id="windS2"></span></li>
                 <li>Wind Chill: <span id="windChill2"></span></li>  
               </ul>
-            </figure><br>
+            <br>
             <figure>
-              <img id="weather-icon3" src="" alt="">
+              <img id="weather-icon3" src="jsonlink" alt="jsonlink">
               <figcaption id="fig3"></figcaption>
+            </figure>
               <span id="current-temp3"></span>
               <span id="ctemp3"></span>
               <ul> 
@@ -117,8 +119,7 @@
                 <li>Wind: <span id="windS3"></span></li>
                 <li>Wind Chill: <span id="windChill3"></span></li>  
               </ul>
-            </figure><br>
-          </p>
+            <br>
           <script src="scripts/windchill.js"></script>
           <script defer src="scripts/forecast.js"></script>
         </section>

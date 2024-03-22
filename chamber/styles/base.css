@@ -122,32 +122,32 @@ section.breaking-news-container button:visited:hover {
 
 /*Call to action Button*/
 section button {
-    background-color: rgb(147, 39, 0);
-    color: rgb(255, 254, 253);
-    font-weight: bold;
-    padding: 20px;
-    margin: 10px;
+  background-color: rgb(147, 39, 0);
+  color: rgb(255, 254, 253);
+  font-weight: bold;
+  padding: 20px;
+  margin: 10px;
 }
 
 section button:hover {
-    background-color: rgb(255, 90, 30);
-    color: rgb(255, 255, 253);
-    font-weight: bolder;
+  background-color: rgb(255, 90, 30);
+  color: rgb(255, 255, 253);
+  font-weight: bolder;
 }
 section button:active {
-    background-color: orange;
-    color: white;
-    font-weight: bolder;
+  background-color: orange;
+  color: white;
+  font-weight: bolder;
 }
 section button:visited {
-    background-color: rgba(255, 90, 30, 0.24);
-    color: rgba(255, 252, 247, 0.24);
-    font-weight: bolder;
+  background-color: rgba(255, 90, 30, 0.24);
+  color: rgba(255, 252, 247, 0.24);
+  font-weight: bolder;
 }
 section button:visited:hover {
-    background-color: rgba(255, 166, 0, 0.5);
-    color: rgb(255, 255, 255, 0.5);
-    font-weight: bolder;
+  background-color: rgba(255, 166, 0, 0.5);
+  color: rgb(255, 255, 255, 0.5);
+  font-weight: bolder;
 }
 
 header, footer {
@@ -160,13 +160,13 @@ header, footer {
 }
 
 img {
-    height: 100px;
-    width: 130px;
+  height: 100px;
+  width: 130px;
 }
 
 h1 {
-    font-size: 24px;
-    color: white;
+  font-size: 24px;
+  color: white;
 }
 
 /* small view navigation */
@@ -385,7 +385,7 @@ section button div {
     margin: 30px auto 0;
     border-radius: 20px;
     color: #fff;
-    background: linear-gradient(120deg, #3700fe, #55499c, #908ab1);
+    background: linear-gradient(120deg, #1c0080, #0048ff, #000ea6);
   }
   #weather p {
     font-size: 20px;

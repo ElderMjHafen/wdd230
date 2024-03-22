@@ -3,8 +3,6 @@ const high = document.querySelector('#high');
 const low = document.querySelector('#low');
 const pre = document.querySelector('#pre');
 const wind = document.querySelector('#windS');
-//const windChill = document.querySelector('#windChill');
-//const direction = ``;
 
 const weatherIcon = document.querySelector('#weather-icon');
 const captionDesc = document.querySelector('figcaption');

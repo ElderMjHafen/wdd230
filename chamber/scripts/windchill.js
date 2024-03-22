@@ -1,4 +1,3 @@
-//const wind = document.querySelector('#windS');
 var windChill = document.querySelector('#windChill');
 
 
@@ -11,7 +10,6 @@ navigator.geolocation.getCurrentPosition(function(position) {
     // Call the OpenWeatherMap API with the obtained coordinates
     const url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&units=imperial&appid=89bd6bba4fd77237e2f8c045af14b381`;
     //console.log(url);
-  
   
   
     async function apiFetch() {
@@ -53,7 +51,3 @@ navigator.geolocation.getCurrentPosition(function(position) {
     
     apiFetch();
 });
-//console.log(data.main.temp);
-/**/
-
-
