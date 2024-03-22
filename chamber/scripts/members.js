@@ -24,7 +24,6 @@ const displayMembers = (members) => {
 
       // Build the h2 content out to show the prophet's full name
       if (member.memberlevel == "GOLD" || member.memberlevel == "SILVER") {// && num == member.position) {
-        console.log(num);
         name.textContent = `${member.comname}`;
         phoneNum.textContent = `Phone: ${member.phone}`;
         website.textContent = `Company Website: ${member.websiteURLs}`;
