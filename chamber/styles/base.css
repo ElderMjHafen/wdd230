@@ -320,7 +320,7 @@ section button div {
   background: #e0dcdca8;
 }
 
-#date {
+#dateNum {
   font-size: 10em;
   margin: 0;
   padding: 0;
@@ -354,7 +354,7 @@ section button div {
   padding: 10px 0 5px 0;
   align-items: center;
 }
-#year {
+#yearNum {
   font-size: 20px;
 }
 
@@ -364,7 +364,7 @@ section button div {
   background-color: #ffffff;
   color: #000;
 }
-#day {
+#dayNum {
   padding: 0;
   margin: 0;
   bottom: 6px;
