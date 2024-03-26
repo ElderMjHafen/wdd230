@@ -93,7 +93,7 @@ body {
 	display: none; /* smaller viewports only */
 }
 
-.list section h3 {
+.list section h2, .list section h3, .list section h6 {
 	font-size: 1rem;
 	font-family: Roboto, Helvetica, sans-serif;
 }
@@ -522,7 +522,7 @@ form h2, form h3, form h4, form h5 {
 form h1 {
   color: #000;
 }
-form h2 {
+form h2, main .return {
   color: white;
 }
 form h3 {

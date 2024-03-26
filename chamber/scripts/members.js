@@ -20,17 +20,17 @@ const displayMembers = (members) => {
       let website = document.createElement('h4');
       let mail = document.createElement('h5');
       let mlevel = document.createElement('h6');
-      let num = Math.floor(Math.random() * 4 ) + 1;
+      let num = Math.floor(Math.random() * 3 ) + 1;
 
       // Build the h2 content out to show the prophet's full name
-      if (member.memberlevel == "GOLD" || member.memberlevel == "SILVER") {// && num == member.position) {
+      if (member.memberlevel == "GOLD" || member.memberlevel == "SILVER" && num == member.position) {
         name.textContent = `${member.comname}`;
         phoneNum.textContent = `Phone: ${member.phone}`;
         website.textContent = `Company Website: ${member.websiteURLs}`;
         website.setAttribute("href", member.websiteURLs);
         mail.textContent = `Email: ${member.email}`;
         mail.setAttribute("href", member.email);
-        mlevel.textContent = `${member.memberlevel}`;
+        mlevel.textContent = `${member.memberlevel}`; //For some reason this only effects the thrid one in the middle that appears with position is met with num
 
         // Build the image portrait by setting all the relevant attributes
         portrait.setAttribute('src', member.imageurl);
