@@ -1,13 +1,14 @@
-const currentTemp = document.querySelector('#current-temp');
-const high = document.querySelector('#high');
-const low = document.querySelector('#low');
-const pre = document.querySelector('#pre');
-const wind = document.querySelector('#windS');
+// Dynamic selection of elements
+const elements = {
+  currentTemp: document.querySelector('#current-temp'),
+  high: document.querySelector('#high'),
+  low: document.querySelector('#low'),
+  pre: document.querySelector('#pre'),
+  wind: document.querySelector('#windS'),
+  weatherIcon: document.querySelector('#weather-icon'),
+  captionDesc: document.querySelector('figcaption')
+};
 
-const weatherIcon = document.querySelector('#weather-icon');
-const captionDesc = document.querySelector('figcaption');
-
-//49.74937832297326, 6.639829910379418
 // Get the current location
 navigator.geolocation.getCurrentPosition(function(position) {
   var lat = position.coords.latitude;
@@ -17,8 +18,6 @@ navigator.geolocation.getCurrentPosition(function(position) {
   const url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&units=imperial&appid=89bd6bba4fd77237e2f8c045af14b381`;
   console.log(url);
 
-
-
   async function apiFetch() {
     try {
       const response = await fetch(url);
@@ -27,55 +26,46 @@ navigator.geolocation.getCurrentPosition(function(position) {
         console.log(data); // testing only
         displayResults(data); // uncomment when ready
       } else {
-          throw Error(await response.text());
+        throw Error(await response.text());
       }
     } catch (error) {
-        console.log(error);
+      console.log(error);
     }
   }
 
-  
   apiFetch();
 });
 
 function displayResults(data) {
   console.log(`degree:`, data.wind.deg);
+  let direction = 'NS'; // default direction
   if (data.wind.deg == 0) {
-    var direction = `N`;
-  }
-  else if (data.wind.deg < 90) {
-    var direction = `NE`;
-  }
-  else if (data.wind.deg == 90) {
-    var direction = `E`;
-  }
-  else if (data.wind.deg < 180) {
-    var direction = `SE`;
-  }
-  else if (data.wind.deg == 180) {
-    var direction = `S`;
-  }
-  else if ( data.wind.deg < 270) {
-    var direction = `SW`;
-  }
-  else if (data.wind.deg == 270) {
-    var direction = `W`;
-  }
-  else {
-    var direction = `NS`;
+    direction = `N`;
+  } else if (data.wind.deg < 90) {
+    direction = `NE`;
+  } else if (data.wind.deg == 90) {
+    direction = `E`;
+  } else if (data.wind.deg < 180) {
+    direction = `SE`;
+  } else if (data.wind.deg == 180) {
+    direction = `S`;
+  } else if (data.wind.deg < 270) {
+    direction = `SW`;
+  } else if (data.wind.deg == 270) {
+    direction = `W`;
   }
   console.log(direction);
-  
+
   console.log(`TEMP:`, data.main.temp);
-  currentTemp.innerHTML = `${data.main.temp}&deg;F`;
-  high.innerHTML = `High: ${data.main.temp_max}&deg;F`;
-  low.innerHTML = `Low: ${data.main.temp_min}&deg;F`;
-  pre.innerHTML = `${data.main.humidity}%`;
-  wind.innerHTML = `${data.wind.speed} MPH ` + direction;
+  elements.currentTemp.innerHTML = `${data.main.temp}&deg;F`;
+  elements.high.innerHTML = `High: ${data.main.temp_max}&deg;F`;
+  elements.low.innerHTML = `Low: ${data.main.temp_min}&deg;F`;
+  elements.pre.innerHTML = `${data.main.humidity}%`;
+  elements.wind.innerHTML = `${data.wind.speed} MPH ` + direction;
   const iconsrc = `https://openweathermap.org/img/w/${data.weather[0].icon}.png`;
   //console.log(iconsrc);
   let desc = data.weather[0].description;
-  weatherIcon.setAttribute('src', iconsrc);
-  weatherIcon.setAttribute('alt', desc);
-  captionDesc.textContent = `${desc}`;
+  elements.weatherIcon.setAttribute('src', iconsrc);
+  elements.weatherIcon.setAttribute('alt', desc);
+  elements.captionDesc.textContent = `${desc}`;
 }

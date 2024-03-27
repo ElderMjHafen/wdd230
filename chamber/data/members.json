@@ -16,7 +16,7 @@
         "memberlevel": "SILVER",
         "email": "deltarune@fangamer.com",
         "imageurl": "https://cdn.akamai.steamstatic.com/steam/apps/1671210/header.jpg?t=1668504080",
-        "position": 2
+        "position": 1
        },
        {
         "comname": "ACE Team",
@@ -52,7 +52,7 @@
         "memberlevel": "SILVER",
         "email": "contact@arrowheadgs.com",
         "imageurl": "https://www.interactive.org/images/games_developers/arrowhead-lg.jpg",
-        "position": 3
+        "position": 2
        },
        {
         "comname": "Compulsion Games Inc.",
@@ -61,7 +61,7 @@
         "memberlevel": "GOLD",
         "email": "info@compulsiongames.com",
         "imageurl": "https://cgcomprod.blob.core.windows.net/strapi-uploads/assets/small_2009_b2cf9c1ffb.png",
-        "position": 4
+        "position": 2
        }
     ]
 }

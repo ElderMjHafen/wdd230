@@ -9,6 +9,20 @@
     <link href="styles/larger.css" rel="stylesheet">
 </head>
 <body>
+    <header>
+        <img src="images/circle_of_commerce.ico" width="110" height="90" alt="Circle Logo">
+        <h1>Hafen Chamber of Commerce</h1>
+        <div id="mode">
+          🌙
+        </div>
+    </header>
+    <button id="menu" title="Nav collapse menu"></button>
+    <nav class="navigation">
+      <a href = "index.html">Home</a>
+      <a href = "#">Discover</a>
+      <a href = "directory.html">Directory</a>
+      <a href = "join.html">Join</a>
+    </nav>
     <main>
         <h1>Account Confrimed</h1>
         <p>
@@ -17,5 +31,12 @@
         </p>
         <a class="return" href = "index.html">Return to Chamber Home Page</a>
     </main>
+    <footer>
+        <p>&copy;<span id="currentYear"></span></p><br>
+        <p>This is a course project for a fictionous chamber of 
+          commerse for WDD 230, Frontend Web Development Course.</p>
+        <p id = "lastModified">Last Modified</p>
+      </footer>
+      <script src="scripts/getdates.js"></script>
 </body>
 </html>
