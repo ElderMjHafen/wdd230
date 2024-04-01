@@ -1,0 +1,52 @@
+.hero {
+    margin: 10px auto;
+    position: relative;
+    border: 1px solid rgba(0,0,0,.1);
+}
+  
+.hero img {
+    width: 98%;
+    height: auto;
+    object-fit: cover;
+}
+  
+.herolabel {
+    position: absolute;
+    color: #ffffff;
+    background-color: #00000034;
+    top: 30px;
+    left: 30px;
+    border: 1px solid rgba(255, 0, 0, 0.372);
+    padding: 1.5rem;
+    box-shadow: 0 0 3rem #fff;
+}
+  
+.herolabel span {
+    margin: 0;
+    padding: .25rem;
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+/*Banner*/
+#banner {
+    background-color: #f4f4f4;
+    color: #000;
+    text-align: center;
+    padding: 22px;
+    font-size: 18px;
+    font-family: Arial, sans-serif;
+    position: relative;
+}
+
+.close-button {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    background-color: #cccccc60;
+    border: none;
+    color: black;
+    padding: 2px 7px;
+    font-size: 13px;
+    cursor: pointer;
+}
