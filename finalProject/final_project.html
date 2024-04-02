@@ -18,34 +18,34 @@
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
 </head>
-<body>
-  <main>
-    <div id="banner">
-      <button class="close-button" onclick="closeBanner()">❌</button>
-      <p><span id="high"><img class="loading" src="images/8622-loading.gif" width="30px"/>Loading high temputure of Cozumel<img class="loading" src="images/8622-loading.gif" width="30px"/></span></p>
-    </div>
-    <script defer src="scripts/banner.js"></script>
-    <div class="hero">
-      <picture>
-          <source srcset="images/cozumel_overview_small.webp" media="(max-width: 500px)">
-          <source srcset="images/cozumel_overview_medium.webp" media="(max-width: 1000px)">
-          <img src="images/cozumel_overview_large.webp" alt="Cozumel Overview" height="750" style="width: 90%">
-      </picture>
-      <div class="herolabel">
-        <span>Cozumel</span>
+  <body>
+    <main>
+      <div id="banner">
+        <button class="close-button" onclick="closeBanner()">❌</button>
+        <p><span id="high"><img class="loading" src="images/8622-loading.gif" width="30px"/>Loading high temputure of Cozumel<img class="loading" src="images/8622-loading.gif" width="30px"/></span></p>
       </div>
-    </div>
-    <section>
-      <img src="images/cozumel-mexico-peer.png" loading="lazy" alt="Pear on Quintana Roo, Mexico." height="750" style="width: 90%"/>
-    </section>
-    <section class = "card">
-      <h2>Make a rental reservation</h2>
-      <p>
-        Come a rent a scooter, ATV, or a Jeep. Travel along the coast of our beatiful seasore
-        and ocrean view. We are sure that you will enjoy your visit to Cozumel.
-      </p>
-      <button role="link" onclick="location.href='join.html'">JOIN OUR COMMUNITY</button>
-    </section>
+      <script defer src="scripts/banner.js"></script>
+      <div class="hero">
+        <picture>
+            <source srcset="images/cozumel_overview_small.webp" media="(max-width: 500px)">
+            <source srcset="images/cozumel_overview_medium.webp" media="(max-width: 1000px)">
+            <img src="images/cozumel_overview_large.webp" alt="Cozumel Overview" height="750" style="width: 90%">
+        </picture>
+        <div class="herolabel">
+          <span>Cozumel</span>
+        </div>
+      </div>
+      <section>
+        <img src="images/cozumel-mexico-peer.png" loading="lazy" alt="Pear on Quintana Roo, Mexico." height="750" style="width: 90%"/>
+      </section>
+      <section class = "card">
+        <h2>Make a rental reservation</h2>
+        <p>
+          Come a rent a scooter, ATV, or a Jeep. Travel along the coast of our beatiful seasore
+          and ocrean view. We are sure that you will enjoy your visit to Cozumel.
+        </p>
+        <button role="link" onclick="location.href='join.html'">JOIN OUR COMMUNITY</button>
+      </section>
       <section class = "card">
         <section id = "weather">
           <h3>Infomation</h3>
@@ -68,9 +68,23 @@
           <script defer src="scripts/weather.js"></script>
         </section>
         <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d239293.76244058926!2d-87.0284159!3d20.4255199!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f4ef8efb0d19327%3A0x342ebcae5c018bfc!2sCozumel!5e0!3m2!1sen!2sus!4v1711974623831!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        <p><span class="label">Visits: </span><span class="visits"></span></p>
       </section>
-      <script src="scripts/visit.js"></script>
-  </main>
-</body>
+      <section class = "card">
+        <h2>Rental Services and Agreements</h2>
+        <li>A $50 security deposit is required to confirm reservations.</li>
+        <li>A valid drivers license is required in hand at the time of rental.</li>
+        <li>No one under the age of 12 years of age are allowed to ride on the scooters.</li>
+        <li>Fuel charge is not included.</li>
+        <li>Unlimited mileage.</li>
+        <li>Liability insurance is included.</li>
+        <li>Damage insurance is available for purchase.</li>
+        <li>Free delivery to Cozumel hotels or Airbnbs for 2+ day rentals.</li>
+        <li>Payment via Google Pay, Apple Pay, cash, credit card, debit card, or venmo.</li>
+        <li>Rentals may be returned to either physical location.</li>
+        <button role="link" onclick="location.href='form.html'">Get a rental</button>
+      </section>
+    </main>
+    <p><span class="label">Visits: </span><span class="visits"></span></p>
+    <script src="scripts/visit.js"></script>
+  </body>
 </html>
