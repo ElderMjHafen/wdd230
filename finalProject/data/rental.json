@@ -1,7 +1,7 @@
 {
     "rentals": [
         {
-            "type": "Honda Metro Scooter",
+            "type": "~Honda Metro Scooter",
             "max": 1,
             "reservation":[
                 {
@@ -17,7 +17,7 @@
             ]
         },
         {
-            "type": "Honda Dio Scooter",
+            "type": "~Honda Dio Scooter",
             "max": 2,
             "reservation":[
                 {
@@ -33,7 +33,7 @@
             ]
         },
         {
-            "type": "Honda PCX150 Scooter",
+            "type": "~Honda PCX150 Scooter",
             "max": 2,
             "reservation":[
                 {

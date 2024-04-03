@@ -68,20 +68,20 @@ form h1 {
 	border: 1px solid #445ba9;
 	border-radius: 10px;
 	padding: .5rem 2%;
-  }
+}
   
   form legend {
 	color: #000000;
 	margin: 0 1rem;
 	padding: 0 .5rem;
-  }
+}
   
   form label.top, form div {
 	display: block;
 	padding-top: 1rem;
 	color: #9c2c13;
 	font-size: .8rem;
-  }
+}
   
   form label.top input, form label.top select {
 	-webkit-appearance: none;
@@ -94,13 +94,13 @@ form h1 {
 	width: 100%;
 	max-width: 20rem;
 	background-color: rgba(0,0,0,0.1);
-  }
+}
   
   form label.sbs {
 	display: block;
 	padding: .75rem;
 	color: #555;
-  }
+}
   
   form input.submitBtn {
 	border: none;
@@ -111,7 +111,7 @@ form h1 {
 	margin: 0 0 2rem 2%;
 	width: 96px;
 	max-width: 20rem;
-  }
+}
   form input.submitBtn:hover {
     border: none;
     background-color: #e63718;
@@ -120,7 +120,7 @@ form h1 {
     padding: .75rem 1.5rem;
     margin: 0 0 2rem 2%;
     max-width: 20rem;
-  }
+}
   form input.submitBtn:active {
     border: none;
     background-color: #ff2f00;
@@ -129,22 +129,38 @@ form h1 {
     padding: .75rem 1.5rem;
     margin: 0 0 2rem 2%;
     max-width: 20rem;
-  }
+}
   
   form label.top input:required {
 	border-left: red solid 6px;
-  }
+}
   
   form label.top input:required:valid {
 	border-left: rgb(0, 217, 0) solid 6px;
-  }
+}
 
-  textarea {
-    background: #0000000f;
-    width: 475px;
-    height: 300px;
-    padding: 10px;
-      margin-bottom: 10px;
-      border: thin;
-      font-size: 1.1rem;
-  }
+textarea {
+  background: #0000000f;
+  width: 475px;
+  height: 300px;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: thin;
+  font-size: 1.1rem;
+}
+
+/*---------- RENTAL -------------*/
+#rentalTable {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+#rentalTable th, #rentalTable td {
+    padding: 8px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+#rentalTable th {
+    background-color: #f2f2f2;
+}

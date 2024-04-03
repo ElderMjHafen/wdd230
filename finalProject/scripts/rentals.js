@@ -5,11 +5,18 @@ async function fetchJSON(url) {
     return await response.json();
 }
 
+async function getRentalData() {
+    const data = await fetchJSON(url);
+    displayRentals(data.rentals); // Assuming displayRentals is a function to display the rental data
+}
+
+getRentalData();
+
 fetchJSON(url)
     .then(data => {
         const rentalTableBody = document.getElementById("rentalTableBody");
 
-        data.Rentals.forEach(rental => {
+        data.rentals.forEach(rental => {
             const row = document.createElement("tr");
             row.innerHTML = `
                 <td>${rental.type}</td>
