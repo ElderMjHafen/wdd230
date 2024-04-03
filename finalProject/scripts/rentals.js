@@ -1,4 +1,4 @@
-const urls = "";
+const urls = "https://eldermjhafen.github.io/wdd230/finalProject/data/rental.json";
 
 async function fetchJSON(url) {
     const response = await fetch(url);
