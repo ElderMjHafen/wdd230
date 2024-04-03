@@ -1,0 +1,100 @@
+{
+    "Rentals": [
+        {
+            "type": "Honda Metro Scooter",
+            "max": 1,
+            "reservation":[
+                {
+                    "haldDay": 20,
+                    "fullDay": 30
+                }
+            ],
+            "walk-in":[
+                {
+                    "haldDay": 25,
+                    "fullDay": 35
+                }
+            ]
+        },
+        {
+            "type": "Honda Dio Scooter",
+            "max": 2,
+            "reservation":[
+                {
+                    "haldDay": 30,
+                    "fullDay": 40
+                }
+            ],
+            "walk-in":[
+                {
+                    "haldDay": 35,
+                    "fullDay": 45
+                }
+            ]
+        },
+        {
+            "type": "Honda PCX150 Scooter",
+            "max": 2,
+            "reservation":[
+                {
+                    "haldDay": 40,
+                    "fullDay": 50
+                }
+            ],
+            "walk-in":[
+                {
+                    "haldDay": 45,
+                    "fullDay": 55
+                }
+            ]
+        },
+        {
+            "type": "Honda Pioneer ATV",
+            "max": 4,
+            "reservation":[
+                {
+                    "haldDay": 50,
+                    "fullDay": 70
+                }
+            ],
+            "walk-in":[
+                {
+                    "haldDay": 60,
+                    "fullDay": 80
+                }
+            ]
+        },
+        {
+            "type": "Jeep Wrangler - 4 door with a/c",
+            "max": 5,
+            "reservation":[
+                {
+                    "haldDay": 70,
+                    "fullDay": 100
+                }
+            ],
+            "walk-in":[
+                {
+                    "haldDay": 85,
+                    "fullDay": 125
+                }
+            ]
+        },
+        {
+            "type": "Jeep Wrangler - 2 door",
+            "max": 4,
+            "reservation":[
+                {
+                    "haldDay": 60,
+                    "fullDay": 85
+                }
+            ],
+            "walk-in":[
+                {
+                    "haldDay": 70,
+                    "fullDay": 90
+                }
+            ]
+        }
+    ]
+}
