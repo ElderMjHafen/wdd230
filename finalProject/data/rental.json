@@ -1,17 +1,17 @@
 {
-    "Rentals": [
+    "rentals": [
         {
             "type": "Honda Metro Scooter",
             "max": 1,
             "reservation":[
                 {
-                    "haldDay": 20,
+                    "halfDay": 20,
                     "fullDay": 30
                 }
             ],
             "walk-in":[
                 {
-                    "haldDay": 25,
+                    "halfDay": 25,
                     "fullDay": 35
                 }
             ]
@@ -21,13 +21,13 @@
             "max": 2,
             "reservation":[
                 {
-                    "haldDay": 30,
+                    "halfDay": 30,
                     "fullDay": 40
                 }
             ],
             "walk-in":[
                 {
-                    "haldDay": 35,
+                    "halfDay": 35,
                     "fullDay": 45
                 }
             ]
@@ -37,13 +37,13 @@
             "max": 2,
             "reservation":[
                 {
-                    "haldDay": 40,
+                    "halfDay": 40,
                     "fullDay": 50
                 }
             ],
             "walk-in":[
                 {
-                    "haldDay": 45,
+                    "halfDay": 45,
                     "fullDay": 55
                 }
             ]
@@ -53,13 +53,13 @@
             "max": 4,
             "reservation":[
                 {
-                    "haldDay": 50,
+                    "halfDay": 50,
                     "fullDay": 70
                 }
             ],
             "walk-in":[
                 {
-                    "haldDay": 60,
+                    "halfDay": 60,
                     "fullDay": 80
                 }
             ]
@@ -69,13 +69,13 @@
             "max": 5,
             "reservation":[
                 {
-                    "haldDay": 70,
+                    "halfDay": 70,
                     "fullDay": 100
                 }
             ],
             "walk-in":[
                 {
-                    "haldDay": 85,
+                    "halfDay": 85,
                     "fullDay": 125
                 }
             ]
@@ -85,13 +85,13 @@
             "max": 4,
             "reservation":[
                 {
-                    "haldDay": 60,
+                    "halfDay": 60,
                     "fullDay": 85
                 }
             ],
             "walk-in":[
                 {
-                    "haldDay": 70,
+                    "halfDay": 70,
                     "fullDay": 90
                 }
             ]
