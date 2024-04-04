@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Scoots Rental Contact</title>
+        <meta property="og:title" content="Michael J. Hafen - WDD 230 - Final Project" />
+        <meta
+            name="description" content= "WDD 230, Michael J. Hafen. Final project for WDD 230 to put all skills
+            learned together."
+        />
+        <meta name="author" content="Michael J. Hafen" />
+        <meta property="og:type" content="Final" />
+        <meta property="og:url" content="https://eldermjhafen.github.io/wdd230/FinalProject" />
+        <meta property="og:image" content="https://eldermjhafen.github.io/wdd230/images/rsz_michael_hafen_pic.jpg" />
+        <link rel="icon" href="images/favicon.ico">
+        <link rel="stylesheet" href="styles/normalize.css">
+        <link rel="stylesheet" href="styles/base.css">
+        <link rel="stylesheet" href="styles/larger.css">
+    </head>
+    <body>
+        <header>
+            <img src="images/cozumel-mexico-peer.png" loading="lazy" alt="Pear on Quintana Roo, Mexico." height="750" style="width: 90%"/>
+            <h1>Scoots Rental Services</h1>
+        </header>
+        <button id="menu" title="Nav collapse menu"></button>
+        <nav class="navigation">
+            <a href = "final_project.html">Home</a>
+            <a href = "rentals.html">Rentals</a>
+            <a href = "form.html">Reservations</a>
+            <a href = "#">Contact</a>
+        </nav>
+        <main>
+            <script src="scripts/hamburger.js"></script>
+            <section class = "card">
+                <h1>Contact our customer service:</h1>
+                <p>Call us (555) 555-5555 or email us at <a href="Scoots@someemail.com">Scoots@someemail.com</a>.</p>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d239293.76244058926!2d-87.0284159!3d20.4255199!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f4ef8efb0d19327%3A0x342ebcae5c018bfc!2sCozumel!5e0!3m2!1sen!2sus!4v1711974623831!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </section>
+            <section>
+                <form action="">
+                    <fieldset>
+                        <legend>Applicant Infomation</legend>
+                        <label class="top">First Name* <input type="text" name="fname" id="fname" required></label>
+                        <label class="top">Last Name* <input type="text" name="lname" id="lname" required></label>
+                        <label class="top">Email* <input type="email" name="email" id="email" placeholder="someone@gmail.com" required></label>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Comment</legend>
+                        <label class="comments"><textarea id="area" name="area"></textarea></label>
+                    </fieldset>
+                    <input type="submit" value="Submit Comment" class="submitBtn">
+                </form>
+            </section>
+        </main>
+        <footer>
+            <p>&copy;<span id="currentYear"></span></p>
+            <p id = "lastModified">Last Modified</p>
+            <p><span class="label">Visits: </span><span class="visits"></span></p>
+        </footer>
+        <script src="scripts/getdates.js"></script>
+    </body>
+</html>

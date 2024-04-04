@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Scoots Rental Infomation</title>
+        <meta property="og:title" content="Michael J. Hafen - WDD 230 - Final Project" />
+        <meta
+        name="description" content= "WDD 230, Michael J. Hafen. Final project for WDD 230 to put all skills
+        learned together."
+        />
+        <meta name="author" content="Michael J. Hafen" />
+        <meta property="og:type" content="Final" />
+        <meta property="og:url" content="https://eldermjhafen.github.io/wdd230/FinalProject" />
+        <meta property="og:image" content="https://eldermjhafen.github.io/wdd230/images/rsz_michael_hafen_pic.jpg" />
+        <link rel="icon" href="images/favicon.ico">
+        <link rel="stylesheet" href="styles/normalize.css">
+        <link rel="stylesheet" href="styles/base.css">
+        <link rel="stylesheet" href="styles/larger.css">
+    </head>
+    <body>
+        <header>
+            <img src="images/cozumel-mexico-peer.png" loading="lazy" alt="Pear on Quintana Roo, Mexico." height="750" style="width: 90%"/>
+            <h1>Scoots Rental Services</h1>
+        </header>
+        <button id="menu" title="Nav collapse menu"></button>
+        <nav class="navigation">
+            <a href = "final_project.html">Home</a>
+            <a href = "#">Rentals</a>
+            <a href = "form.html">Reservations</a>
+            <a href = "contact.html">Contact</a>
+        </nav>
+        <main>
+            <script src="scripts/hamburger.js"></script>
+            <section>
+                <h2>Max Rental Pricing</h2>
+                <table id="rentalTable">
+                    <thead>
+                        <tr>
+                            <th>Type</th>
+                            <th>Max. Persons</th>
+                            <th>Reservation - Half Day</th>
+                            <th>Reservation - Full Day</th>
+                            <th>Walk-in - Half Day</th>
+                            <th>Walk-in - Full Day</th>
+                        </tr>
+                    </thead>
+                    <tbody id="rentalTableBody"></tbody>
+                </table>
+                <script src="scripts/rentals.js"></script>
+            </section>
+        </main>
+        <footer>
+            <p>&copy;<span id="currentYear"></span></p>
+            <p id = "lastModified">Last Modified</p>
+        </footer>
+        <script src="scripts/getdates.js"></script>
+    </body>
+</html>

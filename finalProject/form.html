@@ -1,42 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rental Details Form</title>
-    <link rel="icon" href="images/favicon.ico">
-    <link rel="stylesheet" href="styles/normalize.css">
-    <link rel="stylesheet" href="styles/base.css">
-</head>
-<body>
-    <main>
-        <!--v-FORM-v-->
-        <h2>Rental Details Form</h2>
-        <form method="get" action="thankyou.html">
-            <label class="sbs" for="date">Date:<br><input type="date" id="date" name="date" required></label><br>
-            <label class="sbs" for="period">Period:<br><input type="date" id="period" name="period" required></label><br>
-            <label class="sbs" for="rental-type">Rental Type:<br>
-            <select id="rental-type" name="rental-type" required>
-                <option value="scooter">Honda Metro Scooter</option>
-                <option value="scooter">Honda Dio Scooter</option>
-                <option value="scooter">Honda PCX150 Scooter</option>
-                <option value="atv">Honda Pioneer ATV</option>
-                <option value="jeep">Jeep Wrangler - 4 door with a/c</option>
-                <option value="jeep">Jeep Wrangler - 2 door</option>
-            </select></label><br>
-            <label class="sbs" for="number">Number: <input type="number" id="number" name="number"  value="1" min="1" max="5" oninput="rangevalue.value=value" required></label><br>
-            <label class="top" for="phone">Phone Number: <input type="tel" id="phone" name="phone" required></label><br>
-            <label class="top" for="name">Name: <input type="text" id="name" name="name" required></label><br>
-            <label class="top" for="email">Email: <input type="email" id="email" name="email" required></label><br>
-            <label class="top" for="state-country">Home State or Country: <input type="text" id="state-country" name="state-country" required></label><br>
-            <label class="comments" for="cruise-line">Cruise Line (if applicable):<br>
-            <input type="text" id="cruise-line" name="cruise-line"></label><br><br>
-            <label class="comments" for="accommodations">Special Accommodations/Comments:</label><br>
-            <textarea id="accommodations" name="accommodations"></textarea><br><br>
-            <input class="submitBtn" type="submit" value="RENT">
-            <script src="scripts/value.js"></script>
-        </form>
-
-    </main>
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Rental Details Form</title>
+        <meta property="og:title" content="Michael J. Hafen - WDD 230 - Final Project" />
+        <meta
+        name="description" content= "WDD 230, Michael J. Hafen. Final project for WDD 230 to put all skills
+        learned together."
+        />
+        <meta name="author" content="Michael J. Hafen" />
+        <meta property="og:type" content="Final" />
+        <meta property="og:url" content="https://eldermjhafen.github.io/wdd230/FinalProject" />
+        <meta property="og:image" content="https://eldermjhafen.github.io/wdd230/images/rsz_michael_hafen_pic.jpg" />
+        <link rel="icon" href="images/favicon.ico">
+        <link rel="stylesheet" href="styles/normalize.css">
+        <link rel="stylesheet" href="styles/base.css">
+        <link rel="stylesheet" href="styles/larger.css">
+    </head>
+    <body>
+        <header>
+            <img src="images/cozumel-mexico-peer.png" loading="lazy" alt="Pear on Quintana Roo, Mexico." height="750" style="width: 90%"/>
+            <h1>Scoots Rental Services</h1>
+        </header>
+        <button id="menu" title="Nav collapse menu"></button>
+        <nav class="navigation">
+            <a href = "final_project.html">Home</a>
+            <a href = "rentals.html">Rentals</a>
+            <a href = "#">Reservations</a>
+            <a href = "contact.html">Contact</a>
+        </nav>
+        <main>
+            <script src="scripts/hamburger.js"></script>
+            <section class = "card">
+                <h2>Rental Services and Agreements</h2>
+                <li>A $50 security deposit is required to confirm reservations.</li>
+                <li>A valid drivers license is required in hand at the time of rental.</li>
+                <li>No one under the age of 12 years of age are allowed to ride on the scooters.</li>
+                <li>Fuel charge is not included.</li>
+                <li>Unlimited mileage.</li>
+                <li>Liability insurance is included.</li>
+                <li>Damage insurance is available for purchase.</li>
+                <li>Free delivery to Cozumel hotels or Airbnbs for 2+ day rentals.</li>
+                <li>Payment via Google Pay, Apple Pay, cash, credit card, debit card, or venmo.</li>
+                <li>Rentals may be returned to either physical location.</li>
+                <button role="link" onclick="location.href='form.html'">Get a rental</button>
+            </section>
+            <!--v-FORM-v-->
+            <h2>Rental Details Form</h2>
+            <form method="get" action="thankyou.html">
+                <label class="sbs" for="date">Date:<br><input type="date" id="date" name="date" required></label><br>
+                <label class="sbs" for="period">Period:<br><input type="date" id="period" name="period" required></label><br>
+                <label class="sbs" for="rental-type">Rental Type:<br>
+                <select id="rental-type" name="rental-type" required>
+                    <option value="scooter">Honda Metro Scooter</option>
+                    <option value="scooter">Honda Dio Scooter</option>
+                    <option value="scooter">Honda PCX150 Scooter</option>
+                    <option value="atv">Honda Pioneer ATV</option>
+                    <option value="jeep">Jeep Wrangler - 4 door with a/c</option>
+                    <option value="jeep">Jeep Wrangler - 2 door</option>
+                </select></label><br>
+                <label class="sbs" for="number">Number: <input type="number" id="number" name="number"  value="1" min="1" max="5" oninput="rangevalue.value=value" required></label><br>
+                <label class="top" for="phone">Phone Number: <input type="tel" id="phone" name="phone" required></label><br>
+                <label class="top" for="name">Name: <input type="text" id="name" name="name" required></label><br>
+                <label class="top" for="email">Email: <input type="email" id="email" name="email" required></label><br>
+                <label class="top" for="state-country">Home State or Country: <input type="text" id="state-country" name="state-country" required></label><br>
+                <label class="comments" for="cruise-line">Cruise Line (if applicable):<br>
+                <input type="text" id="cruise-line" name="cruise-line"></label><br><br>
+                <label class="comments" for="accommodations">Special Accommodations/Comments:</label><br>
+                <textarea id="accommodations" name="accommodations"></textarea><br><br>
+                <input class="submitBtn" type="submit" value="RENT">
+                <script src="scripts/value.js"></script>
+            </form>
+        </main>
+        <footer>
+            <p>&copy;<span id="currentYear"></span></p>
+            <p id = "lastModified">Last Modified</p>
+        </footer>
+        <script src="scripts/getdates.js"></script>
+    </body>
 </html>

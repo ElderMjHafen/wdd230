@@ -51,6 +51,11 @@
     cursor: pointer;
 }
 
+#banner img {
+  height: 20px;
+  width: 20px;
+}
+
 /*----------- FORM --------------*/
 form {
 	background-color: rgb(255, 255, 255);
@@ -163,4 +168,95 @@ textarea {
 
 #rentalTable th {
     background-color: #f2f2f2;
+}
+/* small view navigation */
+#menu {
+	font-size: 1.5rem;
+	border: 1px solid rgba(0,0,0,.3);
+	padding: 3px 7px 6px;
+    margin: 10px;
+    margin-left: 15px;
+	background-color: #dfdfdf;
+	color: #000;
+ 	position: absolute;
+	top: .50em;
+	right: .50em;
+}
+
+#menu::before {
+	content: "☰";
+}
+
+#menu.open::before {
+	content: "X";
+    font-family: "roboto";
+}
+
+.navigation {
+	display: flex;
+	flex-direction: column;
+	list-style: none;
+	background-color: #000000;
+	color: #fff;
+}
+
+.navigation a {
+	display: none;
+	padding: 1rem;
+	text-align: center;
+	text-decoration: none;
+	color: #fff;
+}
+.navigation a:hover, section a:hover {
+	font-weight: 700;
+    font-size: larger;
+    
+    color: #aef4ff;
+}
+
+/* when the button is clicked - the open class is toggled (added/removed) */
+.open a {
+	display: block;
+}
+
+.active::before {
+	content: "📍";  /* just a wayfinding symbol for the user */
+}
+
+.stuff {
+	margin: .5em;
+	border: 1px solid rgba(0,0,0,.1);
+	background-color: #bed;
+	max-width: 580px;
+	height: 100vh;
+	
+}
+
+nav {
+    display: block;
+    color: white;
+    background-color: #000;
+    padding: 5px;
+}
+h2, h3 {
+    margin: 0;
+}
+
+nav a {
+    display: block;
+    text-align: center;
+}
+nav a:hover, section a:hover {
+	text-decoration:underline;
+    color: red;
+}
+
+section a, nav a {
+  color: rgb(255, 255, 255);
+  padding: 5px;
+}
+
+a:visited {
+  text-decoration: none;
+  color: rgb(251, 255, 0);
 }
