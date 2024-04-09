@@ -1,7 +1,7 @@
 {
     "rentals": [
         {
-            "type": "~Honda Metro Scooter",
+            "type": "Honda Metro Scooter",
             "max": 1,
             "reservation":[
                 {
@@ -14,10 +14,11 @@
                     "halfDay": 25,
                     "fullDay": 35
                 }
-            ]
+            ],
+            "img": "images/honda_metro_scooter.jpg"
         },
         {
-            "type": "~Honda Dio Scooter",
+            "type": "Honda Dio Scooter",
             "max": 2,
             "reservation":[
                 {
@@ -30,10 +31,11 @@
                     "halfDay": 35,
                     "fullDay": 45
                 }
-            ]
+            ],
+            "img": "images/hondaDio.png"
         },
         {
-            "type": "~Honda PCX150 Scooter",
+            "type": "Honda PCX150 Scooter",
             "max": 2,
             "reservation":[
                 {
@@ -46,7 +48,8 @@
                     "halfDay": 45,
                     "fullDay": 55
                 }
-            ]
+            ],
+            "img": "images/honda_pcx150.png"
         },
         {
             "type": "Honda Pioneer ATV",
@@ -62,7 +65,8 @@
                     "halfDay": 60,
                     "fullDay": 80
                 }
-            ]
+            ],
+            "img": "images/hondaPioneerAtv.png"
         },
         {
             "type": "Jeep Wrangler - 4 door with a/c",
@@ -78,7 +82,8 @@
                     "halfDay": 85,
                     "fullDay": 125
                 }
-            ]
+            ],
+            "img": "images/JeepWrangler4door.jpg"
         },
         {
             "type": "Jeep Wrangler - 2 door",
@@ -94,7 +99,8 @@
                     "halfDay": 70,
                     "fullDay": 90
                 }
-            ]
+            ],
+            "img": "images/JeepWrangler2door.png"
         }
     ]
 }

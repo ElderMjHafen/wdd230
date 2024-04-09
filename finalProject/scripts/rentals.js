@@ -25,6 +25,7 @@ fetchJSON(url)
                 <td>$${rental.reservation[0].fullDay}</td>
                 <td>$${rental['walk-in'][0].halfDay}</td>
                 <td>$${rental['walk-in'][0].fullDay}</td>
+                <td><img src="${rental.img}" alt="${rental.type}" style="max-width: 100px;"></td>
             `;
             rentalTableBody.appendChild(row);
         });
