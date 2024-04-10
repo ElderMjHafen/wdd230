@@ -34,7 +34,8 @@
       <script src="scripts/hamburger.js"></script>
       <div id="banner">
         <button class="close-button" onclick="closeBanner()">❌</button>
-        <p>Today highest high temperature in Cozumel: <span id="high"><img class="loading" src="images/8622-loading.gif" width="30px"/>Loading<img class="loading" src="images/8622-loading.gif" width="30px"/></span>.</p>
+        <p>Today's highest high temperature in Cozumel: <span id="high">Loading</span>.</p>
+        <p>Tomorrow's highest high temperature in Cozumel:<span id="high2">Loading</span>.</p>
       </div>
       <script defer src="scripts/banner.js"></script>
       <div class="hero">
@@ -65,14 +66,14 @@
         <h2>Rental Information</h2>
         <h3>Types of Rentals</h3>
         <h4>Honda Motor Scooters</h4>
-        <li>Honda Metropolitan (49cc) - 1 person</li>
-        <li>Honda Dio (110cc) - 2 person</li>
-        <li>Honda PCX150 (149cc) - 2 person</li>
+        <p>▪Honda Metropolitan (49cc) - 1 person</p>
+        <p>▪Honda Dio (110cc) - 2 person</p>
+        <p>▪Honda PCX150 (149cc) - 2 person</p>
         <h4>Side-by-Side ATVs</h4>
-        <li>Honda Pioneer 1000 - 4 person</li>
+        <p>▪Honda Pioneer 1000 - 4 person</p>
         <h4>Jeeps</h4>
-        <li>Jeep Wrangler - 4 door manuel with A/C - 5 person</li>
-        <li>Jeep Wrangler - 2 door - open air - manuel - 4 person</li>
+        <p>▪Jeep Wrangler - 4 door manuel with A/C - 5 person</p>
+        <p>▪Jeep Wrangler - 2 door - open air - manuel - 4 person</p>
       </section>
       <section class = "card">
         <div class="social">
@@ -87,23 +88,37 @@
       <section class = "card">
         <section id = "weather">
           <h3>Weather Forcast for today and tomorrow's weather:</h3>
+          <h4>Today</h4>
           <p>
             <figure>
-                <img id="weather-icon" src="" alt="">
-                <figcaption></figcaption>
-            </figure><br>
-            <span id="current-temp"></span>
-            <span id="ctemp"></span>
-          </p>
-          <ul> 
-            <li><span id="high"></span></li>
-            <li><span id="low"></span></li>
-            <li>Humidity: <span id="pre"></span></li>
-            <li>Wind: <span id="windS"></span></li>
-            <li>Wind Chill: <span id="windChill"></span></li>  
-          </ul>
-          <script src="scripts/windchill.js"></script>
-          <script defer src="scripts/weather.js"></script>
+              <img id="weather-icon" src="jsonlink" alt="jsonlink">
+              <figcaption></figcaption>
+            </figure>
+              <span id="current-temp"></span>
+              <span id="ctemp"></span>
+              <ul> 
+                <li><span id="low"></span></li>
+                <li>Chance of Precipitation: <span id="pre"></span></li>
+                <li>Wind: <span id="windS"></span></li>
+                <li>Wind Chill: <span id="windChill"></span></li>  
+              </ul>
+            <br>
+            <h4>Tomorrow</h4>
+            <figure>
+              <img id="weather-icon2" src="jsonlink" alt="jsonlink">
+              <figcaption id="fig2"></figcaption>
+            </figure>
+              <span id="current-temp2"></span>
+              <span id="ctemp2"></span>
+              <ul>
+                <li><span id="low2"></span></li>
+                <li>Chance of Precipitation: <span id="pre2"></span></li>
+                <li>Wind: <span id="windS2"></span></li>
+                <li>Wind Chill: <span id="windChill2"></span></li>  
+              </ul>
+            <br>
+            <script src="scripts/windchill.js"></script>
+            <script defer src="scripts/forecast.js"></script>
         </section>
       </section>
     </main>

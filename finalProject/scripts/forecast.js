@@ -8,21 +8,13 @@ const high2 = document.querySelector('#high2');
 const low2 = document.querySelector('#low2');
 const pre2 = document.querySelector('#pre2');
 const wind2 = document.querySelector('#windS2');
-const currentTemp3 = document.querySelector('#current-temp3');
-const high3 = document.querySelector('#high3');
-const low3 = document.querySelector('#low3');
-const pre3 = document.querySelector('#pre3');
-const wind3 = document.querySelector('#windS3');
 
 var windChill2 = document.querySelector('#windChill2');
-var windChill3 = document.querySelector('#windChill3');
 
 const weatherIcon = document.querySelector('#weather-icon');
 const weatherIcon2 = document.querySelector('#weather-icon2');
-const weatherIcon3 = document.querySelector('#weather-icon3');
 const captionDesc = document.querySelector('figcaption');
 const captionDesc2 = document.querySelector('figcaption', 'fig2');
-const captionDesc3 = document.querySelector('figcaption', 'fig3');
 
 //49.74937832297326, 6.639829910379418
 // Get the current location
@@ -31,7 +23,7 @@ navigator.geolocation.getCurrentPosition(function(position) {
   var lon = position.coords.longitude;
 
   // Call the OpenWeatherMap API with the obtained coordinates
-  const url = `https://api.openweathermap.org/data/2.5/weather?lat=20.42&lon=-86.93&units=imperial&appid=89bd6bba4fd77237e2f8c045af14b381`;
+  const url = `https://api.openweathermap.org/data/2.5/forecast?lat=20.42&lon=-86.93&units=imperial&appid=89bd6bba4fd77237e2f8c045af14b381`;
   console.log(url);
 
 
@@ -42,14 +34,14 @@ navigator.geolocation.getCurrentPosition(function(position) {
       if (response.ok) {
         const data = await response.json();
         console.log(data); // testing only
-        console.log(`Next day:`, data.list[8]);
-        console.log(`Following day:`, data.list[16]);
+        console.log(`Next day:`, data.list[0]);
+        console.log(`Following day:`, data.list[6]);
 
         //Day 2
-        var ctemp2 = parseFloat(data.list[8].main.temp);
+        var ctemp2 = parseFloat(data.list[6].main.temp);
         //ctemp2 = ctemp2 - 50; // test
         console.log(`ctemp2:`, ctemp2)
-        var wSpeed2= parseFloat(data.list[8].wind.speed);
+        var wSpeed2= parseFloat(data.list[6].wind.speed);
 
         if (ctemp2 <= 50 & wSpeed2 > 3.0) {
           windChill2 = (35.74 + (0.6215 * ctemp2))-(35.75 * Math.pow(wSpeed2,0.16)) + (0.4275*ctemp2*Math.pow(wSpeed2,0.16));
@@ -61,24 +53,6 @@ navigator.geolocation.getCurrentPosition(function(position) {
         }
         else {
           document.getElementById("windChill2").innerHTML= `N/A`;
-        }
-
-        //Day 3
-        var ctemp3 = parseFloat(data.list[16].main.temp);
-        //ctemp3 = ctemp2 - 50; // test
-        console.log(`ctemp2:`, ctemp3)
-        var wSpeed3 = parseFloat(data.list[16].wind.speed);
-
-        if (ctemp3 <= 50 & wSpeed3 > 3.0) {
-          windChill3 = (35.74 + (0.6215 * ctemp2))-(35.75 * Math.pow(wSpeed3,0.16)) + (0.4275*ctemp3*Math.pow(wSpeed3,0.16));
-          windChill3 = Math.round(windChill3);
-      
-          console.log(windChill3);
-      
-          document.getElementById("windChill3").innerHTML = windChill3 + `&deg;F`;
-        }
-        else {
-          document.getElementById("windChill3").innerHTML = `N/A`;
         }
         
         /*
@@ -129,13 +103,13 @@ navigator.geolocation.getCurrentPosition(function(position) {
         captionDesc.textContent = `${desc}`;
 
         // Day 2
-        currentTemp2.innerHTML = `${data.list[8].main.temp}&deg;F`;
-        high2.innerHTML = `High: ${data.list[8].main.temp_max}&deg;F`;
-        low2.innerHTML = `Low: ${data.list[8].main.temp_min}&deg;F`;
-        pre2.innerHTML = `${data.list[8].main.humidity}%`;
-        wind2.innerHTML = `${data.list[8].wind.speed} MPH `;
-        const iconsrc2 = `https://openweathermap.org/img/w/${data.list[8].weather[0].icon}.png`;
-        let desc2 = data.list[8].weather[0].description;
+        currentTemp2.innerHTML = `${data.list[6].main.temp}&deg;F`;
+        high2.innerHTML = `High: ${data.list[6].main.temp_max}&deg;F`;
+        low2.innerHTML = `Low: ${data.list[6].main.temp_min}&deg;F`;
+        pre2.innerHTML = `${data.list[6].main.humidity}%`;
+        wind2.innerHTML = `${data.list[6].wind.speed} MPH `;
+        const iconsrc2 = `https://openweathermap.org/img/w/${data.list[6].weather[0].icon}.png`;
+        let desc2 = data.list[6].weather[0].description;
         weatherIcon2.setAttribute('src', iconsrc2);
         weatherIcon2.setAttribute('alt', desc2);
         console.log(desc2);

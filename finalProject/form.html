@@ -34,16 +34,16 @@
             <script src="scripts/hamburger.js"></script>
             <section class = "card">
                 <h2>Rental Services and Agreements</h2>
-                <li>A $50 security deposit is required to confirm reservations.</li>
-                <li>A valid drivers license is required in hand at the time of rental.</li>
-                <li>No one under the age of 12 years of age are allowed to ride on the scooters.</li>
-                <li>Fuel charge is not included.</li>
-                <li>Unlimited mileage.</li>
-                <li>Liability insurance is included.</li>
-                <li>Damage insurance is available for purchase.</li>
-                <li>Free delivery to Cozumel hotels or Airbnbs for 2+ day rentals.</li>
-                <li>Payment via Google Pay, Apple Pay, cash, credit card, debit card, or venmo.</li>
-                <li>Rentals may be returned to either physical location.</li>
+                <p>▪A $50 security deposit is required to confirm reservations.</p>
+                <p>▪A valid drivers license is required in hand at the time of rental.</p>
+                <p>▪No one under the age of 12 years of age are allowed to ride on the scooters.</p>
+                <p>▪Fuel charge is not included.</p>
+                <p>▪Unlimited mileage.</p>
+                <p>▪Liability insurance is included.</p>
+                <p>▪Damage insurance is available for purchase.<p>
+                <p>▪Free delivery to Cozumel hotels or Airbnbs for 2+ day rentals.</p>
+                <p>▪Payment via Google Pay, Apple Pay, cash, credit card, debit card, or venmo.</p>
+                <p>▪Rentals may be returned to either physical location.</p>
             </section>
             <!--v-FORM-v-->
             <h2>Rental Details Form</h2>
@@ -53,7 +53,8 @@
                     <label class="sbs" for="date">Date:<br><input type="date" id="date" name="date" required></label><br>
                     <label class="sbs" for="period">Period:<br><input type="date" id="period" name="period" required></label><br>
                     <label class="sbs" for="rental-type">Rental Type:<br>
-                    <select id="rental-type" name="rental-type" required>
+                    <select id="rental-type" name="rental-type">
+                        <option value="none">[Select Vehicle]</option>
                         <option value="scooter">Honda Metro Scooter</option>
                         <option value="scooter">Honda Dio Scooter</option>
                         <option value="scooter">Honda PCX150 Scooter</option>
